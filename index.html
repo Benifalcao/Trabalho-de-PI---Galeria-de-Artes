@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museu Virtual da Literatura</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,20 +16,17 @@
         <h1>Museu Virtual da Literatura</h1>
 
         <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Escolas Literárias</a></li>
-                <li><a href="#">Autores</a></li>
-                <li><a href="#">Galeria</a></li>
-                
-            </ul>
+            <a href="#">Início</a>
+            <a href="#">Escolas Literárias</a>
+            <a href="#">Autores</a>
+            <a href="#">Galeria</a>
+            <a href="#">Sobre</a>
         </nav>
     </div>
 </header>
 
 <section class="hero">
-    <div class="hero-content">
+    <div class="container">
         <h2>Explore o acervo da literatura</h2>
 
         <input
@@ -43,80 +43,115 @@
         <div class="card">
             <h3>Objetivo do Museu Virtual</h3>
             <p>
-                Democratizar o acesso ao patrimônio literário,
-                reunindo escolas, autores e obras.
+                Democratizar o acesso ao patrimônio literário reunindo
+                escolas, autores e obras em um acervo digital interativo.
             </p>
         </div>
 
         <div class="card">
             <h3>Problema que Resolve</h3>
             <p>
-                Facilita o estudo da literatura ao centralizar
-                conteúdos históricos e biográficos.
+                Facilita o estudo da literatura ao centralizar conteúdos
+                dispersos em fontes fragmentadas.
             </p>
         </div>
 
         <div class="card">
             <h3>Equipe e Instituição</h3>
             <p>
-                Projeto desenvolvido por equipe acadêmica
-                dedicada à preservação literária.
+                Projeto desenvolvido para preservação e divulgação da
+                história literária.
             </p>
         </div>
     </div>
 </section>
 
-<section class="escolas container">
-    <h2>Principais Escolas Literárias</h2>
-    <p class="subtitulo">
-        Navegue pelos movimentos que marcaram a história da literatura
-    </p>
+<section class="escolas">
+    <div class="container">
+        <h2>Principais Escolas Literárias</h2>
 
-    <div class="grid-escolas">
+        <div class="grid">
 
-        <article class="escola-card">
-            <div class="imagem"></div>
-            <div class="conteudo">
-                <h3>Trovadorismo</h3>
-                <span>1189 - 1418</span>
-                <p>Poesia trovadoresca ibérica.</p>
-            </div>
-        </article>
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Trovadorismo</h3>
+                    <span>1189 – 1418</span>
+                    <p>Poesia trovadoresca ibérica.</p>
+                </div>
+            </article>
 
-        <article class="escola-card">
-            <div class="imagem"></div>
-            <div class="conteudo">
-                <h3>Classicismo</h3>
-                <span>1527 - 1580</span>
-                <p>Equilíbrio e racionalidade.</p>
-            </div>
-        </article>
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Classicismo</h3>
+                    <span>1527 – 1580</span>
+                    <p>Equilíbrio e racionalidade.</p>
+                </div>
+            </article>
 
-        <article class="escola-card">
-            <div class="imagem"></div>
-            <div class="conteudo">
-                <h3>Barroco</h3>
-                <span>1601 - 1768</span>
-                <p>Conflito entre fé e razão.</p>
-            </div>
-        </article>
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Barroco</h3>
+                    <span>1601 – 1768</span>
+                    <p>Conflito entre fé e razão.</p>
+                </div>
+            </article>
 
-        <article class="escola-card">
-            <div class="imagem"></div>
-            <div class="conteudo">
-                <h3>Arcadismo</h3>
-                <span>1768 - 1836</span>
-                <p>Retorno à simplicidade clássica.</p>
-            </div>
-        </article>
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Arcadismo</h3>
+                    <span>1768 – 1836</span>
+                    <p>Retorno à simplicidade.</p>
+                </div>
+            </article>
 
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Romantismo</h3>
+                    <span>1836 – 1881</span>
+                    <p>Subjetividade e idealização.</p>
+                </div>
+            </article>
+
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Realismo</h3>
+                    <span>1881 – 1893</span>
+                    <p>Observação crítica da realidade.</p>
+                </div>
+            </article>
+
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Parnasianismo</h3>
+                    <span>1882 – 1922</span>
+                    <p>Culto à forma.</p>
+                </div>
+            </article>
+
+            <article class="escola-card">
+                <div class="thumb"></div>
+                <div class="content">
+                    <h3>Modernismo</h3>
+                    <span>1922 – 1960</span>
+                    <p>Ruptura estética.</p>
+                </div>
+            </article>
+
+        </div>
     </div>
 </section>
 
 <footer>
     <div class="container footer-content">
-        <span>Museu Virtual da Literatura</span>
-        <span>© 2026 Museu Virtual da Literatura</span>
+        <p>Museu Virtual da Literatura</p>
+        <p>© 2026 Museu Virtual da Literatura</p>
     </div>
 </footer>
 
