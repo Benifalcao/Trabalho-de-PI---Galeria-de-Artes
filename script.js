@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     semResultados.textContent = 'Nenhuma escola, autor ou obra encontrado.';
     semResultados.style.display = 'none';
     semResultados.style.padding = '20px 0';
+    semResultados.style.textAlign = 'center';
     grid.after(semResultados);
 
     function normalizar(texto) {
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             .trim();
     }
 
-    
     grid.innerHTML = escolas.map(function (escola) {
         return (
             '<article class="escola-card">' +
@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
             texto: normalizar([autor.nome, autor.periodo, (autor.obras || []).join(' '), autor.temas].join(' '))
         });
     });
-
 
     function corresponde(texto, termo) {
         const palavras = termo.split(/\s+/).filter(Boolean);
@@ -95,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const encontrados = indice.filter(item => corresponde(item.texto, termo));
 
-        
         if (encontrados.length === 1) {
             window.location.href = encontrados[0].linkDestino;
             return;

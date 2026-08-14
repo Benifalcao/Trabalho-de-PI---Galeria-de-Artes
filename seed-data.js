@@ -1,5 +1,3 @@
-
-
 const escolasSeed = [
     { slug: "trovadorismo", nome: "Trovadorismo", periodo: "1189 – 1418", descricao: "Poesia trovadoresca ibérica.", link: "Trovadorismo/trovadorismo.html" },
     { slug: "classicismo", nome: "Classicismo", periodo: "1527 – 1580", descricao: "Equilíbrio e racionalidade.", link: "Classicismo/classicismo.html" },
@@ -12,6 +10,130 @@ const escolasSeed = [
 ];
 
 const autoresSeed = [
+    {
+        slug: "martim-codax",
+        nome: "Martim Codax",
+        escolaSlug: "trovadorismo",
+        link: "Trovadorismo/Autores/martim-codax.html",
+        periodo: "Séc. XIII",
+        local: "Vigo, Galiza",
+        bio: "Martim Codax foi um trovador ou jogral galego-português ativo no século XIII. Pouco se sabe sobre sua vida pessoal, mas ele se tornou uma figura central da literatura medieval por suas cantigas de amigo que cantam o mar, a saudade e a espera pelo amado na ria de Vigo.",
+        obras: [
+            "Ondas do mar de Vigo",
+            "Mandad'ei comigo",
+            "Mia irmana fremosa",
+            "Ay Deus, se sab'ora meu amigo",
+            "Quantas sabedes amar amigo",
+            "Eno sagrado, en Vigo",
+            "Ai ondas que eu vin veer"
+        ],
+        temas: "Saudade do amado distante, o mar de Vigo como testemunha e interlocutor, a expectativa feminina, a natureza marinha, reuniões em santuários e a angústia da espera.",
+        caracteristicas: "Composição sob a forma de cantigas de amigo (voz lírica feminina), estrutura paralelística rigorosa, presença de refrão (leixaprén) e grande musicalidade preservada no Pergaminho Vindel.",
+        influencias: "Consolidou a tradição da lírica galego-portuguesa medieval, conectando a poesia culta trovadoresca às origens populares e marítimas do noroeste ibérico.",
+        citacao: "Ondas do mar de Vigo, / se vistes meu amigo? / E ay Deus, se verrá cedo!"
+    },
+    {
+        slug: "joao-garcia-de-guilhade",
+        nome: "João Garcia de Guilhade",
+        escolaSlug: "trovadorismo",
+        link: "Trovadorismo/Autores/joao-guilhade.html",
+        periodo: "Séc. XIII",
+        local: "Guilhade, Portugal",
+        bio: "João Garcia de Guilhade foi um dos trovadores portugueses mais proeminentes e criativos do século XIII. Ativo na corte de Afonso III de Portugal e de Afonso X de Castela, destacou-se pela enorme versatilidade ao transitar com genialidade entre as cantigas de amor, de amigo, de escárnio e de maldizer.",
+        obras: [
+            "Ai dona fea, fostes-vos queixar",
+            "Amigos, non posso eu negar",
+            "Un cavaleiro com boa vertude",
+            "Que mui gran prazer tenho eu i de ver",
+            "Quantos han gran coita d'amor",
+            "Soberana e mui nobre senhor"
+        ],
+        temas: "Paródia do amor cortês, ironia social, sátira direta e bem-humorada, a coita de amor levada ao exagero cômico, a beleza (ou falta dela) e a vida nas cortes medievais.",
+        caracteristicas: "Notável uso da ironia, sarcasmo e humor refinado. Inovou ao ridicularizar os clichês do amor cortês e ao introduzir elementos visuais e caricaturais marcantes.",
+        influencias: "Atuou como figura de transição e renovação na lírica galego-portuguesa, influenciando gerações subsequentes de trovadores e jograis com seu tom crítico.",
+        citacao: "Ai, dona fea, fostes-vos queixar / que vos nunca louvo em meu cantar; / mais ora quero fazer um cantar / em que vos louvarei toda via..."
+    },
+    {
+        slug: "dom-dinis",
+        nome: "Dom Dinis",
+        escolaSlug: "trovadorismo",
+        link: "Trovadorismo/Autores/dom-dinis.html",
+        periodo: "1261 – 1325",
+        local: "Lisboa, Portugal",
+        bio: "Dom Dinis I, conhecido como o 'Rei Poeta' ou 'Rei Lavrador', foi rei de Portugal e um dos maiores nomes do Trovadorismo ibérico. Mecenas fundamental da cultura medieval, oficializou a língua portuguesa nos documentos do reino e deixou uma vasta obra poética de mais de 130 cantigas.",
+        obras: [
+            "Quer'eu em maneira de prowençal",
+            "A doirada pastorinha",
+            "Provençaliç'at'ora meu cantar",
+            "O que vos nunca cuidai a dizer",
+            "A deas do meu coraçon",
+            "Amigo, quen hoji de vós se partir"
+        ],
+        temas: "Coita d'amor (sofrimento amoroso), vassalagem poética, saudade do amado, a figura da pastora nas pastorelas e a natureza como refúgio e cenário sentimental.",
+        caracteristicas: "Apurada técnica formal, adaptação das convenções líricas provençais à língua galego-portuguesa, delicadeza no tratamento das cantigas e pioneirismo no desenvolvimento das pastorelas.",
+        influencias: "Influenciado pela tradição dos trovadores provençais do sul da França, D. Dinis promoveu o apogeu da corte literária portuguesa e influenciou poetas em toda a Península Ibérica.",
+        citacao: "Quer'eu em maneira de prowençal / fazer agora um cantar d'amor, / e quer'i loar minha senhor / a que prez e fermosura non fal..."
+    },
+    {
+        slug: "bernardim-ribeiro",
+        nome: "Bernardim Ribeiro",
+        escolaSlug: "humanismo",
+        link: "Classicismo/Autores/bernardim-ribeiro.html",
+        periodo: "c. 1482 – 1552",
+        local: "Torrão, Portugal",
+        bio: "Bernardim Ribeiro foi um poeta e novelista português, figura de transição entre a poesia palaciana do Humanismo e o Classicismo. Ficou imortalizado por introduzir a novela pastoril na Península Ibérica e por sua atmosfera de profundo sentimentalismo, melancolia e mistério.",
+        obras: [
+            "Menina e Moça (1554)",
+            "Trovas de Dois Pastores",
+            "Écloga de Jano e Franco",
+            "Écloga de Aontio",
+            "Romance de Aonio"
+        ],
+        temas: "A saudade, a dor do amor não correspondido, a fatalidade do destino, o sofrimento existencial e o cenário bucólico/pastoril como espelho dos sentimentos humanos.",
+        caracteristicas: "Linguagem poética marcada pela melancolia (a típica 'saudade' portuguesa), introspecção psicológica, tom confessional e narrativa enigmática com forte apelo emotivo.",
+        influencias: "Inspirou-se na literatura bucólica e na tradição lírica do Cancioneiro Geral. Sua obra-prima, Menina e Moça, inaugurou a narrativa sentimental pastoril em Portugal.",
+        citacao: "Menina e moça me levaram da casa de minha mãe para muito longe... Que culpa tive eu logo então de me achar ali onde a dor estava aparelhada para mim?"
+    },
+    {
+        slug: "luis-de-camoes",
+        nome: "Luís de Camões",
+        escolaSlug: "classicismo",
+        link: "Classicismo/Autores/camoes.html",
+        periodo: "c. 1524 – 1580",
+        local: "Lisboa, Portugal",
+        bio: "Luís Vaz de Camões é considerado o maior poeta da língua portuguesa e um dos maiores nomes da literatura universal. Sua genialidade transita entre a épica monumental das Grandes Navegações e uma poesia lírica de intensa profundidade neoplatônica.",
+        obras: [
+            "Os Lusíadas (1572)",
+            "Rimas (1595)",
+            "Anfitriões (1587)",
+            "El-Rei Seleuco (1645)",
+            "Filodemo (1587)"
+        ],
+        temas: "O amor platônico e contraditório, o desconcerto do mundo, a pequenez humana diante do destino, as grandes navegações e o efêmero da vida.",
+        caracteristicas: "Rigor formal e métrico no estilo clássico (sonetos, decassílabos e oitava rima), lirismo amoroso neoplatônico, dualidade entre razão e sentimento, e estrutura épica homérica.",
+        influencias: "Influenciado pelos modelos da Antiguidade Clássica (Homero, Virgílio, Ovídio) e pelos humanistas do Renascimento italiano (Petrarca), fundando a tradição literária moderna em português.",
+        citacao: "Amor é um fogo que arde sem se ver; / É ferida que dói, e não se sente; / É um contentamento descontentado; / É dor que desatina sem doer."
+    },
+    {
+        slug: "sa-de-miranda",
+        nome: "Sá de Miranda",
+        escolaSlug: "classicismo",
+        link: "Classicismo/Autores/sa-miranda.html",
+        periodo: "1481 – 1558",
+        local: "Coimbra / Amares, Portugal",
+        bio: "Francisco de Sá de Miranda foi o grande renovador da poesia portuguesa no século XVI. Após uma longa viagem à Itália, importou para Portugal as formas poéticas do Renascimento — como o soneto, a canção e o verso decassílabo — e escreveu as primeiras comédias de estilo clássico.",
+        obras: [
+            "Ecloga dos dous pastores",
+            "Comédia dos Estrangeiros (1527)",
+            "Comédia Vilhalpandos (1538)",
+            "Carta a D. João III",
+            "Sonetos e Éclogas"
+        ],
+        temas: "A crítica moral aos costumes da corte, o elogio à vida bucólica e simples do campo (beatus ille), o desencanto com a corrupção do império e a reflexão sobre a brevidade da vida.",
+        caracteristicas: "Introdução da 'medida nova' (versos decassílabos em oposição à 'medida velha' redondilha), uso do soneto, estilo sóbrio, austero, tom moralizante e forte presença do pensamento filosófico.",
+        influencias: "Inspirou-se nos poetas italianos do Renascimento (Petrarca, Sannazaro) e clássicos latinos (Horácio, Virgílio). Ao regressar a Portugal em 1527, abriu caminho para Camões.",
+        citacao: "O sol é grande, caem cos quebrantos / as aves, com o calor das sestas graves / voam a furto, e com cantos suaves / em estâmago doentio metem espantos."
+    },
     {
         slug: "jose-alencar",
         nome: "José Martiniano de Alencar",
