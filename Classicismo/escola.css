@@ -180,6 +180,20 @@ border:1px solid #e5ddd5;
 line-height:1.8;
 }
 
+.botão{
+padding:60px 0;
+background:#f2eee7;
+}
+
+.botão button{
+padding:12px 20px;
+border:none;
+background:#7d2d2d;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
 footer{
 background:#1c1713;
 color:white;
