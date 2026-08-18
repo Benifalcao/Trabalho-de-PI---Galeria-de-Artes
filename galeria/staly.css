@@ -1,0 +1,239 @@
+/* Resets básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background-color: #f4f2eb;
+  color: #1a1a1a;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-weight: bold;
+  color: #70262b;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.nav-links a.active {
+  color: #70262b;
+  border-bottom: 2px solid #70262b;
+}
+
+/* Banner Principal */
+.hero-banner {
+  background-color: #1a1714;
+  color: #f4f2eb;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* Container do Título com as Setas */
+.banner-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Espaço entre as setas e o título */
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* Estilo das Setas de Navegação */
+.nav-arrow {
+  color: #d1c7b7;
+  text-decoration: none;
+  font-size: 1.8rem;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(209, 199, 183, 0.3);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+/* Efeito ao passar o mouse na seta */
+.nav-arrow:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.hero-banner h2 {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  margin-top: 0.5rem;
+  color: #d1c7b7;
+}
+
+/* Layout Principal (Grid 2 Colunas) */
+.main-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Galeria de Quadros */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+}
+
+.card-info {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-info p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.card-tag {
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.badge {
+  display: block;
+  color: #c88d2b;
+  font-weight: bold;
+}
+
+.year {
+  color: #888;
+}
+
+/* Painel Escuro */
+.info-panel {
+  background-color: #1c1a17;
+  color: #e2dacd;
+  padding: 2.5rem 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.panel-subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #c88d2b;
+  font-weight: bold;
+}
+
+.panel-title {
+  font-size: 1.6rem;
+  margin: 0.8rem 0 1.2rem;
+  color: #ffffff;
+}
+
+.panel-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #b5ada1;
+  margin-bottom: 1rem;
+}
+
+.panel-highlight {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #8c8377;
+  margin-bottom: 2rem;
+}
+
+.panel-stats {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #332f2a;
+  padding-top: 1.2rem;
+}
+
+.panel-stats strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.panel-stats span {
+  font-size: 0.75rem;
+  color: #8c8377;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #1a1714;
+  color: #8c8377;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  font-size: 0.8rem;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-title-wrapper {
+    gap: 1rem;
+  }
+}

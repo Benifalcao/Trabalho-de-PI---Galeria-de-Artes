@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museu Virtual da Literatura - Galeria</title>
+  <link rel="stylesheet" href="staly.css" />
+</head>
+<body>
+
+  <!-- Topbar / Header -->
+  <header class="navbar">
+    <div class="logo">Museu Virtual da Literatura</div>
+    <nav class="nav-links">
+      <a href="/index.html">Início</a>
+      <a href="/index.html">Escolas Literárias</a>
+      <a href="/autores.html">Autores</a>
+      <a href="/galeria.html" class="active">Galeria</a>
+      <a href="/sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- Banner Principal com Setas de Navegação -->
+  <section class="hero-banner">
+    <div class="banner-title-wrapper">
+      <!-- Seta para Esquerda (Página Anterior) -->
+      <a href="trovadorismo.html" class="nav-arrow prev" title="Escola Anterior">&#10094;</a>
+      
+      <h1>ROMANTISMO</h1>
+      
+      <!-- Seta para Direita (Próxima Página) -->
+      <a href="#" class="nav-arrow next" title="Próxima Escola">&#10095;</a>
+    </div>
+    <h2>GALERIA DE ARTES</h2>
+  </section>
+
+  <!-- Layout Principal (Galeria + Painel Lateral) -->
+  <main class="main-container">
+    
+    <!-- Coluna da Esquerda: Grid de Cards/Quadros -->
+    <section class="gallery-grid">
+      
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="card-img" style="background-image: url('caminho/para/abaporu.jpg');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Abaporu</h3>
+            <p>Tarsila do Amaral</p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">MODERNISMO</span>
+            <span class="year">1928</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="card-img" style="background-image: url('caminho/para/a-carioca.jpg');"></div>
+        <div class="card-info">
+          <div>
+            <h3>A Carioca</h3>
+            <p>Pedro Américo</p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">PARNASIANISMO</span>
+            <span class="year">1882</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="card-img" style="background-image: url('caminho/para/o-violeiro.jpg');"></div>
+        <div class="card-info">
+          <div>
+            <h3>O Violeiro</h3>
+            <p>Almeida Júnior</p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">REALISMO</span>
+            <span class="year">1899</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <div class="card-img" style="background-image: url('caminho/para/moema.jpg');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Moema</h3>
+            <p>Victor Meirelles</p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">ROMANTISMO</span>
+            <span class="year">1866</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Coluna da Direita: Painel Escuro (CenterInfoPanel) -->
+    <aside class="info-panel">
+      <span class="panel-subtitle">SALA ALTERNATIVA</span>
+      <h2 class="panel-title">Ritmos Visuais do Brasil</h2>
+      <p class="panel-desc">
+        Explore a justaposição rítmica entre as escolas literárias brasileiras e as obras de arte que as definiram.
+      </p>
+      <p class="panel-highlight">
+        De Victor Meirelles a Portinari, contemple as transições estéticas do nosso patrimônio.
+      </p>
+      <div class="panel-stats">
+        <div>
+          <strong>6 Salas</strong>
+          <span>Exposição ativa</span>
+        </div>
+        <div>
+          <strong>24 Obras</strong>
+          <span>Catalogadas</span>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <span>Museu Virtual da Literatura</span>
+    <span>© 2026 Museu Virtual da Literatura</span>
+  </footer>
+
+</body>
+</html>
