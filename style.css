@@ -111,17 +111,40 @@ nav a{
     box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
 
+/* Remove a linha roxa de link nos cards */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Área da Imagem */
 .thumb{
-    height:140px;
+    height:180px;
     background:#b98b2d;
+    overflow:hidden;
+    width:100%;
+}
+
+/* Centraliza a imagem no topo sem vazar no texto */
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .content{
     padding:18px;
+    background: white;
 }
 
 .content h3{
     margin-bottom:5px;
+    color: #3f342d;
 }
 
 .content span{
@@ -129,6 +152,12 @@ nav a{
     color:#8a2f2f;
     font-size:13px;
     margin-bottom:10px;
+}
+
+.content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 footer{

@@ -21,20 +21,22 @@ document.addEventListener('DOMContentLoaded', function () {
             .trim();
     }
 
-    grid.innerHTML = escolas.map(function (escola) {
-        return (
-            '<article class="escola-card">' +
-                '<a href="' + escola.link + '" class="card-link">' +
-                    '<div class="thumb"></div>' +
-                    '<div class="content">' +
-                        '<h3>' + escola.nome + '</h3>' +
-                        '<span>' + escola.periodo + '</span>' +
-                        '<p>' + escola.descricao + '</p>' +
-                    '</div>' +
-                '</a>' +
-            '</article>'
-        );
-    }).join('');
+ grid.innerHTML = escolas.map(function (escola) {
+    return (
+        '<article class="escola-card">' +
+            '<a href="' + escola.link + '" class="card-link">' +
+                '<div class="thumb">' +
+                    '<img src="' + (escola.imagem || 'img/default.jpg') + '" alt="' + escola.nome + '">' +
+                '</div>' +
+                '<div class="content">' +
+                    '<h3>' + escola.nome + '</h3>' +
+                    '<span>' + escola.periodo + '</span>' +
+                    '<p>' + escola.descricao + '</p>' +
+                '</div>' +
+            '</a>' +
+        '</article>'
+    );
+}).join('');
 
     const cardsEscola = Array.from(grid.querySelectorAll('.escola-card'));
 
