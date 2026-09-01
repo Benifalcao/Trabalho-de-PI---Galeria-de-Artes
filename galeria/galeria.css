@@ -88,10 +88,14 @@ body {
 }
 
 /* Alturas Ajustadas para Reproduzir o Layout */
-.card-trovadorismo { height: 260px; }
-.card-romantismo   { height: 260px; }
-.card-classicismo  { height: 260px; }
-.card-arcadismo    { height: 260px; }
+.card-trovadorismo  { height: 260px; }
+.card-romantismo    { height: 260px; }
+.card-classicismo   { height: 260px; }
+.card-arcadismo     { height: 260px; }
+.card-barroco       { height: 260px; }
+.card-realismo      { height: 260px; }
+.card-parnasianismo { height: 260px; }
+.card-modernismo    { height: 260px; }
 
 /* Camada de Escurecimento e Sombra Interna da Foto */
 .card-overlay {
