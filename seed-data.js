@@ -1,5 +1,5 @@
 const escolasSeed = [
-    { slug: "trovadorismo", nome: "Trovadorismo", periodo: "1189 – 1418", descricao: "Poesia trovadoresca ibérica.", link: "Trovadorismo/trovadorismo.html" },
+    { slug: "trovadorismo", nome: "Trovadorismo", periodo: "1189 – 1418", descricao: "Poesia trovadoresca ibérica.", link: "Trovadorismo/trovadorismo.html", imagem:"img/trovadorismo.jpeg" },
     { slug: "classicismo", nome: "Classicismo", periodo: "1527 – 1580", descricao: "Equilíbrio e racionalidade.", link: "Classicismo/classicismo.html",imagem:"img/Classicimo.jpeg"},
     { slug: "barroco", nome: "Barroco", periodo: "1601 – 1768", descricao: "Conflito entre fé e razão.", link: "barroco.html" },
     { slug: "arcadismo", nome: "Arcadismo", periodo: "1768 – 1836", descricao: "Retorno à simplicidade.", link: "arcadismo.html" },
