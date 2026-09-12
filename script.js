@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const escolas = escolasSeed;
     const autores = autoresSeed;
+    const obrasGaleria = typeof obrasGaleriaSeed !== 'undefined' ? obrasGaleriaSeed : [];
 
     const semResultados = document.createElement('p');
     semResultados.textContent = 'Nenhuma escola, autor ou obra encontrado.';
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '<article class="escola-card">' +
             '<a href="' + escola.link + '" class="card-link">' +
                 '<div class="thumb">' +
-                    '<img src="' + (escola.imagem || 'img/default.jpg') + '" alt="' + escola.nome + '">' +
+                    (escola.imagem ? '<img src="' + escola.imagem + '" alt="' + escola.nome + '">' : '') +
                 '</div>' +
                 '<div class="content">' +
                     '<h3>' + escola.nome + '</h3>' +
@@ -56,6 +57,16 @@ document.addEventListener('DOMContentLoaded', function () {
             linkCard: escola ? escola.link : null,
             linkDestino: autor.link || (escola ? escola.link : null),
             texto: normalizar([autor.nome, autor.periodo, (autor.obras || []).join(' '), autor.temas].join(' '))
+        });
+    });
+
+    // Obras de arte da Galeria (ex: pinturas e esculturas exibidas na galeria do Classicismo)
+    obrasGaleria.forEach(function (obra) {
+        const escola = escolas.find(e => e.slug === obra.escolaSlug);
+        indice.push({
+            linkCard: escola ? escola.link : null,
+            linkDestino: obra.link || (escola ? escola.link : null),
+            texto: normalizar([obra.nome, obra.autor, obra.ano, obra.descricao].join(' '))
         });
     });
 

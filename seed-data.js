@@ -135,6 +135,64 @@ const autoresSeed = [
         citacao: "O sol é grande, caem cos quebrantos / as aves, com o calor das sestas graves / voam a furto, e com cantos suaves / em estâmago doentio metem espantos."
     },
     {
+        slug: "antonio-ferreira",
+        nome: "Antônio Ferreira",
+        escolaSlug: "classicismo",
+        link: "Classicismo/Autores/antonio-ferreira.html",
+        periodo: "1528 – 1569",
+        local: "Lisboa, Portugal",
+        bio: "Antônio Ferreira foi poeta, dramaturgo e magistrado, um dos maiores defensores da língua portuguesa em oposição ao castelhano, então predominante entre os poetas da corte. É autor da primeira tragédia clássica escrita em português, 'Castro', inspirada na trágica história de Inês de Castro.",
+        obras: [
+            "Castro (tragédia, c. 1587)",
+            "Cartas (epístolas)",
+            "Sonetos",
+            "Éclogas",
+            "Odes"
+        ],
+        temas: "O amor trágico e o poder do destino, a defesa apaixonada da língua e da cultura portuguesas, a reflexão moral sobre a razão de Estado e o conflito entre o dever público e o sentimento privado.",
+        caracteristicas: "Rigor clássico na construção dramática, com estrutura em atos e coros ao modo greco-romano; linguagem elevada e culta; forte influência retórica; uso do verso decassílabo e do soneto na lírica.",
+        influencias: "Bebeu diretamente da tragédia clássica grega (Sófocles, Eurípides) e latina (Sêneca), além do humanismo renascentista de Sá de Miranda, de quem foi discípulo direto em Coimbra.",
+        citacao: "Não posso deixar de amar minha língua, e de a estimar e prezar mais que a todas."
+    },
+    {
+        slug: "diogo-bernardes",
+        nome: "Diogo Bernardes",
+        escolaSlug: "classicismo",
+        link: "Classicismo/Autores/diogo-bernardes.html",
+        periodo: "c. 1530 – c. 1605",
+        local: "Ponte da Barca, Portugal",
+        bio: "Diogo Bernardes foi um dos principais poetas bucólicos do Classicismo português. Discípulo de Sá de Miranda, dedicou-se sobretudo à poesia pastoril e amorosa, sendo lembrado por sua obra 'O Lima', em que celebra a paisagem do rio que dá nome ao livro.",
+        obras: [
+            "O Lima (1596)",
+            "Várias Rimas ao Bom Jesus de Monte (1594)",
+            "Rimas Várias — Flores do Lima (1597)",
+            "Éclogas"
+        ],
+        temas: "A vida pastoril e a paisagem natural do Minho, o amor idealizado, a saudade e a nostalgia do tempo perdido, além de uma religiosidade serena presente em sua fase mais tardia.",
+        caracteristicas: "Linguagem simples e musical, forte apego à écloga e ao gênero bucólico, versos decassílabos e redondilhas, tom melancólico e contemplativo diante da natureza.",
+        influencias: "Formado sob a influência direta de Sá de Miranda e da poesia pastoril italiana, seguiu o modelo clássico de Virgílio nas éclogas, adaptando-o à paisagem e à sensibilidade portuguesas.",
+        citacao: "Correndo vou por ti, ó claro Lima, / a ver se acharei nesses teus vales / algum remédio à dor que me lastima."
+    },
+    {
+        slug: "pero-caminha",
+        nome: "Pero de Andrade Caminha",
+        escolaSlug: "classicismo",
+        link: "Classicismo/Autores/pero-caminha.html",
+        periodo: "1520 – 1589",
+        local: "Ponte de Lima / Lisboa, Portugal",
+        bio: "Pero de Andrade Caminha foi poeta da corte de D. João III e D. Sebastião, reconhecido por sua produção lírica em molde clássico e por sua atuação como conselheiro literário, revisando e comentando os versos de outros poetas do seu tempo.",
+        obras: [
+            "Poemas (edição póstuma, 1791)",
+            "Sonetos",
+            "Éclogas",
+            "Cartas e Epístolas"
+        ],
+        temas: "O amor cortês e platônico, a reflexão moral e filosófica, o elogio a figuras da nobreza e da corte, e a preocupação constante com o rigor da forma poética.",
+        caracteristicas: "Estilo comedido e polido, fidelidade às formas clássicas (soneto, écloga, epístola), preocupação com a métrica e a correção da língua, tom reflexivo e por vezes didático.",
+        influencias: "Seguiu de perto o modelo de Sá de Miranda e de Camões, e manteve estreito contato com os principais poetas clássicos portugueses, atuando como uma espécie de guardião do rigor formal da 'medida nova'.",
+        citacao: "Não é o verso que faz o poeta, mas o poeta que faz o verso digno de ser lido."
+    },
+    {
         slug: "jose-alencar",
         nome: "José Martiniano de Alencar",
         escolaSlug: "romantismo",
@@ -175,5 +233,65 @@ const autoresSeed = [
         caracteristicas: "Linguagem simples e fluida, narrativa leve, humor moderado, descrições dos costumes sociais e foco em histórias sentimentais voltadas ao público leitor da época.",
         influencias: "Influenciado pelo Romantismo europeu e pelos romances de costumes, adaptou essas referências à realidade urbana brasileira, especialmente à sociedade do Rio de Janeiro imperial.",
         citacao: "A Moreninha é considerado o primeiro grande romance romântico brasileiro."
+    }
+];
+
+// Obras de arte exibidas na Galeria do Classicismo (galeria/galeria_classicismo.html)
+const obrasGaleriaSeed = [
+    {
+        nome: "O Nascimento de Vênus",
+        autor: "Sandro Botticelli",
+        ano: "c. 1485",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Reflete o Paganismo Mitológico e a valorização da beleza idealizada. A obra recupera os mitos greco-romanos, elemento central da poesia classicista de Camões."
+    },
+    {
+        nome: "A Escola de Atenas",
+        autor: "Rafael Sanzio",
+        ano: "1511",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Símbolo supremo do Racionalismo e do Antropocentrismo. Reúne grandes filósofos da Antiguidade, espelhando a busca pela sabedoria e simetria do período."
+    },
+    {
+        nome: "A Primavera",
+        autor: "Sandro Botticelli",
+        ano: "c. 1482",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Representa o Neoplatonismo e a contemplação da natureza harmoniosa (Locus Amoenus), tema constante nos sonetos e bucolismo da literatura renascentista."
+    },
+    {
+        nome: "Mona Lisa",
+        autor: "Leonardo da Vinci",
+        ano: "1503",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Exemplo do Humanismo e da proporção técnica. Expressa a busca do Classicismo pelo equilíbrio geométrico, estudo do ser humano e contenção das emoções."
+    },
+    {
+        nome: "Pietà",
+        autor: "Michelangelo",
+        ano: "1499",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Símbolo do Idealismo Clássico e do rigor anatômico. Demonstra a harmonia triangular e a serenidade diante da dor, refletindo a busca do período pela contenção emocional e perfeição estética."
+    },
+    {
+        nome: "A Última Ceia",
+        autor: "Leonardo da Vinci",
+        ano: "1498",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Exemplo perfeito da Perspectiva Linear e da geometria sagrada. Expressa a contenção das emoções humanas e a simetria clássica no exato instante de reação dramática do grupo."
+    },
+    {
+        nome: "Davi",
+        autor: "Michelangelo",
+        ano: "1504",
+        escolaSlug: "classicismo",
+        link: "galeria/galeria_classicismo.html",
+        descricao: "Apogeu do Antropocentrismo e do dinamismo contido (contrapposto). Celebra a coragem e a força da razão humana, espelhando o herói heroico dos poemas épicos renascentistas."
     }
 ];
