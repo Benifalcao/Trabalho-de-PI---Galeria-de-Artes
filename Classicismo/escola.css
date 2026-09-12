@@ -1,127 +1,132 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:'Inter',sans-serif;
-    background:#f7f4ef;
-    color:#4d4139;
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f4ef;
+    color: #4d4139;
 }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-header{
-    background:white;
-    border-bottom:1px solid #ddd;
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
 }
 
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 0;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
-.nav h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:1.5rem;
-    color:#8a3030;
+.nav h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: #8a3030;
 }
 
-nav{
-    display:flex;
-    gap:25px;
+nav {
+    display: flex;
+    gap: 25px;
 }
 
-nav a{
-    text-decoration:none;
-    color:#333;
-    font-size:14px;
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
 }
 
-.banner{
-    background:#7d2d2d;
-    color:white;
-    padding:70px 0;
+.banner {
+    background: #7d2d2d;
+    color: white;
+    padding: 70px 0;
 }
 
-.categoria{
-    letter-spacing:2px;
-    font-size:12px;
-    color:#f2d8b7;
+.categoria {
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #f2d8b7;
 }
 
-.banner h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:4rem;
-    margin:10px 0;
+.banner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin: 10px 0;
 }
 
-.banner p{
-    opacity:.9;
+.banner p {
+    opacity: .9;
 }
 
-.conteudo{
-    padding:60px 0;
-    background:white;
+.conteudo {
+    padding: 60px 0;
+    background: white;
 }
 
-.bloco{
-    margin-bottom:40px;
+.bloco {
+    margin-bottom: 40px;
 }
 
-.bloco h3{
-    font-family:'Cormorant Garamond',serif;
-    color:#8a3030;
-    margin-bottom:10px;
-    font-size:1.8rem;
+.bloco h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #8a3030;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
 }
 
-.bloco p{
-    line-height:1.8;
-    max-width:900px;
+.bloco p {
+    line-height: 1.8;
+    max-width: 900px;
 }
 
-.caracteristicas{
-    padding:60px 0;
-    background:#f2eee7;
+.caracteristicas {
+    padding: 60px 0;
+    background: #f2eee7;
 }
 
 .caracteristicas h3,
 .obras h3,
+.tipos-obras h3,
 .movimentos h3,
 .curiosidade h3,
 .galeria-grid h3,
-.sobre-conteudo h3{
-    font-family:'Cormorant Garamond',serif;
-    font-size:2rem;
-    margin-bottom:20px;
-    color:#8a3030;
+.sobre-conteudo h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8a3030;
 }
 
-.tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-bottom:25px;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
 }
 
-.tags span{
-    border:1px solid #c9a04a;
-    color:#9a7020;
-    padding:8px 15px;
-    border-radius:50px;
-    font-size:14px;
-    background:white;
+.tags span {
+    border: 1px solid #c9a04a;
+    color: #9a7020;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    background: white;
 }
 
-/* Estilo padrão para Botões ou Links com classe .btn */
+.tags span a {
+    text-decoration: none;
+    color: inherit;
+}
+
 button,
 .btn {
     display: inline-block;
@@ -146,28 +151,32 @@ button a {
     text-decoration: none;
 }
 
-.obras{
-    padding:60px 0;
-    background:white;
+.obras {
+    padding: 60px 0;
+    background: white;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:20px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
 }
 
-.obra{
-    background:white;
+.obra {
+    background: white;
 }
 
-/* Área e encaixe da imagem da obra */
-.thumb{
-    height:160px;
-    background:#bc8b28;
-    border-radius:8px;
-    margin-bottom:15px;
-    overflow:hidden;
+.obra a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.thumb {
+    height: 160px;
+    background: #bc8b28;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
 }
 
 .thumb img {
@@ -177,102 +186,133 @@ button a {
     display: block;
 }
 
-.obra h4{
-    margin-bottom:5px;
+.obra h4 {
+    margin-bottom: 5px;
 }
 
-.obra p{
-    font-size:14px;
-    color:#666;
+.obra p {
+    font-size: 14px;
+    color: #666;
 }
 
-.movimentos{
-    padding:40px 0;
-    background:#f7f4ef;
+/* Secção Tipos de Obras */
+.tipos-obras {
+    padding: 60px 0;
+    background: #f2eee7;
 }
 
-.galeria-btn{
-    padding:20px 0;
+.tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
 }
 
-.curiosidade{
-    background:#efece7;
-    padding:40px 0 80px;
+.tipo-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e3deca;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-.curiosidade p{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    border:1px solid #e5ddd5;
-    line-height:1.8;
+.tipo-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #8a3030;
+    margin-bottom: 10px;
 }
 
-.botão{
-    padding:60px 0;
-    background:#f2eee7;
+.tipo-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #555555;
 }
 
-footer{
-    background:#1c1713;
-    color:white;
-    padding:25px 0;
+.movimentos {
+    padding: 40px 0;
+    background: #f7f4ef;
 }
 
-.footer{
-    display:flex;
-    justify-content:space-between;
+.galeria-btn {
+    padding: 20px 0;
 }
 
-/* ===== Página Galeria ===== */
-
-.galeria-grid{
-    padding:60px 0;
-    background:white;
+.curiosidade {
+    background: #efece7;
+    padding: 40px 0 80px;
 }
 
-.galeria-fotos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:18px;
+.curiosidade p {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5ddd5;
+    line-height: 1.8;
 }
 
-.galeria-item{
-    height:200px;
-    background:#bc8b28;
-    border-radius:10px;
-    overflow:hidden;
-    position:relative;
+.botão {
+    padding: 60px 0;
+    background: #f2eee7;
 }
 
-.galeria-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+footer {
+    background: #1c1713;
+    color: white;
+    padding: 25px 0;
 }
 
-.galeria-item .legenda{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    background:rgba(28,23,19,.65);
-    color:white;
-    font-size:13px;
-    padding:8px 12px;
+.footer {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* ===== Página Sobre ===== */
-
-.sobre-conteudo{
-    padding:60px 0;
-    background:#f2eee7;
+/* Página Galeria */
+.galeria-grid {
+    padding: 60px 0;
+    background: white;
 }
 
-.sobre-conteudo .bloco{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    border:1px solid #e5ddd5;
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.galeria-item {
+    height: 200px;
+    background: #bc8b28;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-item .legenda {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(28, 23, 19, .65);
+    color: white;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+
+/* Página Sobre */
+.sobre-conteudo {
+    padding: 60px 0;
+    background: #f2eee7;
+}
+
+.sobre-conteudo .bloco {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5ddd5;
 }
