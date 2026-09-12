@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Museu Virtual da Literatura - Galeria</title>
   <link rel="stylesheet" href="staly.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,92 +13,156 @@
   <header class="navbar">
     <div class="logo">Museu Virtual da Literatura</div>
     <nav class="nav-links">
-      <a href="/index.html">Início</a>
-      <a href="/index.html">Escolas Literárias</a>
-      <a href="/autores.html">Autores</a>
-      <a href="/galeria.html" class="active">Galeria</a>
-      <a href="/sobre.html">Sobre</a>
+      <a href="../index.html">Início</a>
+      <a href="../index.html#escolas">Escolas Literárias</a>
+      <a href="../autores.html">Autores</a>
+      <a href="indexgaleria.html" class="active">Galeria</a>
+      <a href="../index.html#sobre">Sobre</a>
     </nav>
   </header>
 
   <!-- Banner Principal com Setas de Navegação -->
   <section class="hero-banner">
     <div class="banner-title-wrapper">
-      <!-- Seta para Esquerda (Página Anterior) -->
       <a href="trovadorismo.html" class="nav-arrow prev" title="Escola Anterior">&#10094;</a>
       
       <h1>CLASSICISMO</h1>
       
-      
       <a href="galeria_romantismo.html" class="nav-arrow next" title="Próxima Escola">&#10095;</a>
     </div>
-    <h2>GALERIA DE ARTES</h2>
+    <h2>GALERIA DE ARTES PLÁSTICAS</h2>
   </section>
 
   <!-- Layout Principal (Galeria + Painel Lateral) -->
   <main class="main-container">
     
-    <!-- Coluna da Esquerda: Grid de Cards/Quadros -->
+    <!-- Coluna da Esquerda: Grid de Cards/Quadros com Imagens Locais -->
     <section class="gallery-grid">
       
       <!-- Card 1 -->
       <article class="card">
-        <div class="card-img" style="background-image: url('../Classicismo/img/os-lusiadas.png');"></div>
+        <div class="card-img" style="background-image: url('../Classicismo/img/nascimento-de-venus.png');"></div>
         <div class="card-info">
           <div>
-            <h3>Os Lusíadas</h3>
-            <p>Luís de Camões</p>
+            <h3>O Nascimento de Vênus</h3>
+            <p class="autor">Sandro Botticelli</p>
+            <p class="obra-desc">
+              Reflete o <strong>Paganismo Mitológico</strong> e a valorização da beleza idealizada. A obra recupera os mitos greco-romanos, elemento central da poesia classicista de Camões.
+            </p>
           </div>
           <div class="card-tag">
             <span class="badge">CLASSICISMO</span>
-            <span class="year">1572</span>
+            <span class="year">c. 1485</span>
           </div>
         </div>
       </article>
 
       <!-- Card 2 -->
       <article class="card">
-        <div class="card-img" style="background-image: url('../Classicismo/img/sonetos-camoes.png');"></div>
+        <div class="card-img" style="background-image: url('../Classicismo/img/escola-de-atenas.png');"></div>
         <div class="card-info">
           <div>
-            <h3>Sonetos</h3>
-            <p>Luís de Camões</p>
+            <h3>A Escola de Atenas</h3>
+            <p class="autor">Rafael Sanzio</p>
+            <p class="obra-desc">
+              Símbolo supremo do <strong>Racionalismo</strong> e do <strong>Antropocentrismo</strong>. Reúne grandes filósofos da Antiguidade, espelhando a busca pela sabedoria e simetria do período.
+            </p>
           </div>
           <div class="card-tag">
             <span class="badge">CLASSICISMO</span>
-            <span class="year">Séc. XVI</span>
+            <span class="year">1511</span>
           </div>
         </div>
       </article>
 
       <!-- Card 3 -->
       <article class="card">
-        <div class="card-img" style="background-image: url('caminho/para/elegias.jpg');"></div>
+        <div class="card-img" style="background-image: url('../Classicismo/img/a-primavera.png');"></div>
         <div class="card-info">
           <div>
-            <h3>Elegias</h3>
-            <p>Sá de Miranda</p>
+            <h3>A Primavera</h3>
+            <p class="autor">Sandro Botticelli</p>
+            <p class="obra-desc">
+              Representa o <strong>Neoplatonismo</strong> e a contemplação da natureza harmoniosa (<em>Locus Amoenus</em>), tema constante nos sonetos e bucolismo da literatura renascentista.
+            </p>
           </div>
           <div class="card-tag">
             <span class="badge">CLASSICISMO</span>
-            <span class="year">Séc. XVI</span>
+            <span class="year">c. 1482</span>
           </div>
         </div>
       </article>
 
       <!-- Card 4 -->
       <article class="card">
-        <div class="card-img" style="background-image: url('../Classicismo/img/cartas.png');"></div>
+        <div class="card-img" style="background-image: url('../Classicismo/img/mona-lisa.png');"></div>
         <div class="card-info">
           <div>
-            <h3>Cartas</h3>
-            <p>Antônio Ferreira</p>
+            <h3>Mona Lisa</h3>
+            <p class="autor">Leonardo da Vinci</p>
+            <p class="obra-desc">
+              Exemplo do <strong>Humanismo</strong> e da proporção técnica. Expressa a busca do Classicismo pelo equilíbrio geométrico, estudo do ser humano e contenção das emoções.
+            </p>
           </div>
           <div class="card-tag">
             <span class="badge">CLASSICISMO</span>
-            <span class="year">Séc. XVI</span>
+            <span class="year">1503</span>
           </div>
         </div>
+      </article>
+
+      <!-- Card 5 (Pietà) -->
+      <article class="card">
+         <div class="card-img" style="background-image: url('../Classicismo/img/pieta.png');"></div>
+         <div class="card-info">
+           <div>
+            <h3>Pietà</h3>
+            <p class="autor">Michelangelo</p>
+            <p class="obra-desc">
+             Símbolo do <strong>Idealismo Clássico</strong> e do rigor anatômico. Demonstra a harmonia triangular e a serenidade diante da dor, refletindo a busca do período pela contenção emocional e perfeição estética.
+            </p>
+           </div>
+           <div class="card-tag">
+             <span class="badge">CLASSICISMO</span>
+             <span class="year">1499</span>
+           </div>
+         </div>
+      </article>
+
+      <!-- Card 6 (A Última Ceia) -->
+      <article class="card">
+         <div class="card-img" style="background-image: url('../Classicismo/img/a-ultima-ceia.png');"></div>
+         <div class="card-info">
+           <div>
+              <h3>A Última Ceia</h3>
+              <p class="autor">Leonardo da Vinci</p>
+              <p class="obra-desc">
+               Exemplo perfeito da <strong>Perspectiva Linear</strong> e da geometria sagrada. Expressa a contenção das emoções humanas e a simetria clássica no exato instante de reação dramática do grupo.
+              </p>
+           </div>
+           <div class="card-tag">
+              <span class="badge">CLASSICISMO</span>
+              <span class="year">1498</span>
+           </div>
+         </div>
+      </article>
+
+      <!-- Card 7 (Davi) -->
+      <article class="card">
+         <div class="card-img" style="background-image: url('../Classicismo/img/davi.png');"></div>
+         <div class="card-info">
+           <div>
+              <h3>Davi</h3>
+              <p class="autor">Michelangelo</p>
+              <p class="obra-desc">
+               Apogeu do <strong>Antropocentrismo</strong> e do dinamismo contido (<em>contrapposto</em>). Celebra a coragem e a força da razão humana, espelhando o herói heroico dos poemas épicos renascentistas.
+              </p>
+           </div>
+           <div class="card-tag">
+              <span class="badge">CLASSICISMO</span>
+              <span class="year">1504</span>
+           </div>
+         </div>
       </article>
 
     </section>
@@ -108,12 +173,12 @@
       <h2 class="panel-title">Razão, Equilíbrio e Antiguidade</h2>
       <p class="panel-desc">
         Explore o retorno aos valores da Antiguidade Greco-Romana que
-        marcou o Classicismo português, entre o rigor formal do soneto
-        e a grandeza épica das navegações.
+        marcou o Classicismo e o Renascimento, entre a simetria estética, a
+        perspectiva perfeita e a harmonia das formas.
       </p>
       <p class="panel-highlight">
-        De Sá de Miranda a Camões, contemple o encontro entre a razão
-        renascentista e a identidade da língua portuguesa.
+        Das obras-primas italianas às telas renascentistas, contemple o encontro entre
+        a razão, a mitologia antiga e o humanismo da época.
       </p>
       <div class="panel-stats">
         <div>
