@@ -4,39 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Museu Virtual da Literatura - Galeria</title>
-  <link rel="stylesheet" href="staly.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Topbar / Header -->
-  <header class="navbar">
-    <div class="logo">Museu Virtual da Literatura</div>
-    <nav class="nav-links">
-      <a href="../index.html">Início</a>
-      <a href="../index.html#escolas">Escolas Literárias</a>
-      <a href="../autores.html">Autores</a>
-      <a href="indexgaleria.html" class="active">Galeria</a>
-      <a href="../index.html#sobre">Sobre</a>
-    </nav>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <h1>Museu Virtual da Literatura</h1>
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="../index.html#escolas">Escolas Literárias</a>
+        <a href="../autores.html">Autores</a>
+        <a href="indexgaleria.html" class="active">Galeria</a>
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#busca">🔍</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Banner Principal com Setas de Navegação -->
+  <!-- Banner Principal com Navegação -->
   <section class="hero-banner">
-    <div class="banner-title-wrapper">
-      <a href="trovadorismo.html" class="nav-arrow prev" title="Escola Anterior">&#10094;</a>
-      
-      <h1>CLASSICISMO</h1>
-      
-      <a href="galeria_romantismo.html" class="nav-arrow next" title="Próxima Escola">&#10095;</a>
+    <div class="container">
+      <div class="banner-title-wrapper">
+        <a href="trovadorismo.html" class="nav-arrow prev" title="Escola Anterior">&#10094;</a>
+        <h1>CLASSICISMO</h1>
+        <a href="galeria_romantismo.html" class="nav-arrow next" title="Próxima Escola">&#10095;</a>
+      </div>
+      <h2>GALERIA DE ARTES PLÁSTICAS</h2>
     </div>
-    <h2>GALERIA DE ARTES PLÁSTICAS</h2>
   </section>
 
-  <!-- Layout Principal (Galeria + Painel Lateral) -->
+  <!-- Conteúdo Principal (Grid de Cards + Painel Lateral) -->
   <main class="main-container">
     
-    <!-- Coluna da Esquerda: Grid de Cards/Quadros com Imagens Locais -->
+    <!-- Grid de Cards de Obras -->
     <section class="gallery-grid">
       
       <!-- Card 1 -->
@@ -155,7 +158,7 @@
             <h3>Davi</h3>
             <p class="autor">Michelangelo</p>
             <p class="obra-desc">
-              Apogeu do <strong>Antropocentrismo</strong> e do dinamismo contido (<em>contrapposto</em>). Celebra a coragem e a força da razão humana, espelhando o herói heroico dos poemas épicos renascentistas.
+              Apogeu do <strong>Antropocentrismo</strong> e do dinamismo contido (<em>contraposto</em>). Celebra a coragem e a força da razão humana, espelhando o herói dos poemas épicos renascentistas.
             </p>
           </div>
           <div class="card-tag">
@@ -167,7 +170,7 @@
 
     </section>
 
-    <!-- Coluna da Direita: Painel Escuro (CenterInfoPanel) -->
+    <!-- Painel Lateral Informativo -->
     <aside class="info-panel">
       <span class="panel-subtitle">SALA CLÁSSICA</span>
       <h2 class="panel-title">Razão, Equilíbrio e Antiguidade</h2>
@@ -194,17 +197,19 @@
 
   </main>
 
-  <!-- Seção do Botão de Voltar -->
-  <section class="botão">
+  <!-- Botão de Voltar -->
+  <section class="secao-botao">
     <div class="container">
       <a href="javascript:history.back()" class="btn">Voltar</a>
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer class="footer">
-    <span>Museu Virtual da Literatura</span>
-    <span>© 2026 Museu Virtual da Literatura</span>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <span>Museu Virtual da Literatura</span>
+      <span>© 2026 Museu Virtual da Literatura</span>
+    </div>
   </footer>
 
 </body>
