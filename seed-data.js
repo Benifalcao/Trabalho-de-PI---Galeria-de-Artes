@@ -2,7 +2,7 @@ const escolasSeed = [
     { slug: "trovadorismo", nome: "Trovadorismo", periodo: "1189 – 1418", descricao: "Poesia trovadoresca ibérica.", link: "Trovadorismo/trovadorismo.html", imagem:"img/trovadorismo.jpeg" },
     { slug: "classicismo", nome: "Classicismo", periodo: "1527 – 1580", descricao: "Equilíbrio e racionalidade.", link: "Classicismo/classicismo.html",imagem:"img/Classicimo.jpeg"},
     { slug: "barroco", nome: "Barroco", periodo: "1601 – 1768", descricao: "Conflito entre fé e razão.", link: "barroco.html",imagem:"img/Barroco.jpeg" },
-    { slug: "arcadismo", nome: "Arcadismo", periodo: "1768 – 1836", descricao: "Retorno à simplicidade.", link: "arcadismo.html",imagem:"img/Arcadismo.png" },
+    { slug: "arcadismo", nome: "Arcadismo", periodo: "1768 – 1836", descricao: "Retorno à simplicidade.", link: "Arcadismo/arcadismo.html",imagem:"img/Arcadismo.png" },
     { slug: "romantismo", nome: "Romantismo", periodo: "1836 – 1881", descricao: "Subjetividade e idealização.", link: "Romantismo/romantismo.html", imagem:"img/Romantismo.png" },
     { slug: "realismo", nome: "Realismo", periodo: "1881 – 1893", descricao: "Observação crítica da realidade.", link: "realismo.html",imagem:"img/Realismo.png" },
     { slug: "parnasianismo", nome: "Parnasianismo", periodo: "1882 – 1922", descricao: "Culto à forma.", link: "parnasianismo.html",imagem:"img/Parnasianismo.png" },
@@ -233,6 +233,108 @@ const autoresSeed = [
         caracteristicas: "Linguagem simples e fluida, narrativa leve, humor moderado, descrições dos costumes sociais e foco em histórias sentimentais voltadas ao público leitor da época.",
         influencias: "Influenciado pelo Romantismo europeu e pelos romances de costumes, adaptou essas referências à realidade urbana brasileira, especialmente à sociedade do Rio de Janeiro imperial.",
         citacao: "A Moreninha é considerado o primeiro grande romance romântico brasileiro."
+    },
+    {
+        slug: "claudio-manuel-da-costa",
+        nome: "Cláudio Manuel da Costa",
+        escolaSlug: "arcadismo",
+        link: "Arcadismo/Autores/claudio-manuel-da-costa.html",
+        periodo: "1729 – 1789",
+        local: "Mariana (Vila do Ribeirão do Carmo), Minas Gerais",
+        bio: "Cláudio Manuel da Costa foi poeta, advogado e uma das figuras centrais do Arcadismo brasileiro. Formado em Direito em Coimbra, voltou a Minas Gerais e tornou-se um dos homens mais cultos de Vila Rica, onde exerceu a advocacia e cargos públicos. Com o nome pastoril de Glauceste Satúrnio, publicou em 1768 as Obras Poéticas, considerada o marco inicial do Arcadismo no Brasil. Envolvido na Inconfidência Mineira, foi preso em 1789 e morreu na prisão, em circunstâncias que ainda são discutidas.",
+        obras: [
+            "Obras Poéticas (1768)",
+            "Vila Rica (poema épico, escrito em 1773)",
+            "Munúsculo Métrico (1751)",
+            "Labirinto de Amor (1753)"
+        ],
+        temas: "A natureza áspera e montanhosa de Minas Gerais em contraste com a paisagem idealizada dos pastores, o amor por Nise, a passagem do tempo, a saudade da vida simples e o conflito entre a rudeza do ambiente colonial e o ideal árcade.",
+        caracteristicas: "Sonetos de grande rigor formal, em decassílabos, herdeiros de Camões e de Petrarca; linguagem culta; mistura de convenções árcades (pastores, ninfas, mitologia) com marcas barrocas, como a oposição entre dor e prazer, o que o torna uma figura de transição.",
+        influencias: "Influenciado por Camões, por Petrarca, pelos poetas da Arcádia italiana e pelo Classicismo português. Sua obra introduziu no Brasil o ideal árcade e inspirou outros poetas mineiros, como Gonzaga e Alvarenga Peixoto.",
+        citacao: "Destes penhascos fez a natureza / O berço, em que nasci! oh quem cuidara / Que entre penhas tão duras se criara / Uma alma terna, um peito sem dureza!"
+    },
+    {
+        slug: "tomas-antonio-gonzaga",
+        nome: "Tomás Antônio Gonzaga",
+        escolaSlug: "arcadismo",
+        link: "Arcadismo/Autores/tomas-antonio-gonzaga.html",
+        periodo: "1744 – c. 1810",
+        local: "Porto, Portugal",
+        bio: "Tomás Antônio Gonzaga nasceu no Porto, mas viveu grande parte da vida no Brasil. Formado em Direito em Coimbra, foi nomeado ouvidor em Vila Rica, onde conheceu Maria Dorotéia Joaquina de Seixas, a Marília de seus versos. Com o nome pastoril de Dirceu, escreveu Marília de Dirceu, uma das obras mais conhecidas do Arcadismo brasileiro. Acusado de participar da Inconfidência Mineira, foi preso em 1789 e depois exilado em Moçambique, onde morreu por volta de 1810.",
+        obras: [
+            "Marília de Dirceu (1792)",
+            "Cartas Chilenas (sátira atribuída ao autor)",
+            "Tratado de Direito Natural (1768)"
+        ],
+        temas: "O amor idealizado por Marília, o desejo de uma vida simples ao lado da amada, a passagem do tempo, o carpe diem e, nas Cartas Chilenas, a crítica ao abuso de poder e à corrupção do governo colonial.",
+        caracteristicas: "Liras de versos curtos, linguagem simples e musical; o pastor Dirceu declara seu amor a Marília e imagina uma vida tranquila. Na segunda parte de Marília de Dirceu, escrita na prisão, o tom torna-se mais melancólico e pessoal. As Cartas Chilenas são uma sátira em versos brancos, de tom irônico.",
+        influencias: "Influenciado por Horácio e Virgílio, pela lírica de Camões e pelos poetas árcades portugueses e italianos. Sua obra fixou na literatura brasileira a imagem do poeta-pastor apaixonado.",
+        citacao: "Eu, Marília, não sou algum vaqueiro, / Que viva de guardar alheio gado; / De tosco trato, d'expressões grosseiro, / Dos frios gelos, e dos sóis queimado."
+    },
+    {
+        slug: "basilio-da-gama",
+        nome: "Basílio da Gama",
+        escolaSlug: "arcadismo",
+        link: "Arcadismo/Autores/basilio-da-gama.html",
+        periodo: "1741 – 1795",
+        local: "São José do Rio das Mortes (hoje Tiradentes), Minas Gerais",
+        bio: "José Basílio da Gama foi poeta e funcionário da corte portuguesa. Educado pelos jesuítas, aproximou-se em Lisboa do Marquês de Pombal, de quem recebeu proteção. Em Roma, integrou a Arcádia Romana com o nome de Termindo Sipílio. Sua obra mais importante, O Uraguai (1769), é um poema épico sobre a Guerra Guaranítica.",
+        obras: [
+            "O Uraguai (1769)",
+            "Quitúbia (1791)"
+        ],
+        temas: "A Guerra Guaranítica, o encontro entre colonizadores e indígenas, a crítica aos jesuítas, a defesa da política do Marquês de Pombal e a natureza do Novo Mundo.",
+        caracteristicas: "Poema épico em cinco cantos e em versos brancos (decassílabos sem rima), de linguagem concisa, que rompe com o modelo camoniano da oitava rima. Os indígenas são retratados com grande lirismo, como Lindoia e Cacambo, e o tom favorece a política pombalina.",
+        influencias: "Influenciado pela tradição épica de Virgílio e de Camões e pelo ambiente iluminista do reinado de D. José I. A forma como representa os indígenas anuncia temas que seriam desenvolvidos pelo Romantismo indianista."
+    },
+    {
+        slug: "santa-rita-durao",
+        nome: "Santa Rita Durão",
+        escolaSlug: "arcadismo",
+        link: "Arcadismo/Autores/santa-rita-durao.html",
+        periodo: "c. 1722 – 1784",
+        local: "Cata Preta (perto de Mariana), Minas Gerais",
+        bio: "Frei José de Santa Rita Durão foi religioso agostiniano, teólogo e poeta. Estudou em Coimbra, enfrentou perseguições durante o governo de Pombal e viveu em outros países da Europa. É o autor de Caramuru (1781), poema épico sobre o descobrimento da Bahia.",
+        obras: [
+            "Caramuru (1781)"
+        ],
+        temas: "A colonização da Bahia, a figura do náufrago português Diogo Álvares Correia (o Caramuru), sua união com a indígena Paraguaçu, a conversão dos indígenas ao cristianismo e a exaltação da terra brasileira.",
+        caracteristicas: "Epopeia em dez cantos e em oitava rima, de estrutura camoniana, que narra fatos históricos com visão providencialista. Traz descrições da fauna, da flora e dos costumes indígenas, em tom de exaltação religiosa e colonial.",
+        influencias: "Seguiu de perto o modelo de Os Lusíadas, de Camões. Caramuru é um dos primeiros textos a tratar o indígena e a natureza brasileira como matéria épica."
+    },
+    {
+        slug: "alvarenga-peixoto",
+        nome: "Alvarenga Peixoto",
+        escolaSlug: "arcadismo",
+        link: "Arcadismo/Autores/alvarenga-peixoto.html",
+        periodo: "1742 – 1792",
+        local: "Rio de Janeiro, Rio de Janeiro",
+        bio: "Inácio José de Alvarenga Peixoto foi poeta e magistrado. Formado em Direito em Coimbra, atuou em Minas Gerais como magistrado e proprietário de minas, e casou-se com a poetisa Bárbara Heliodora. Com o nome pastoril de Eureste Fenício, escreveu sonetos, odes e o Canto Genetlíaco. Participou da Inconfidência Mineira, foi condenado ao degredo e morreu em Angola, em 1792.",
+        obras: [
+            "Canto Genetlíaco (1782)",
+            "Ode a Dona Maria I",
+            "Sonetos"
+        ],
+        temas: "O amor, a natureza, o elogio a autoridades em poemas de ocasião e a reflexão sobre a vida e o destino, que se intensifica nos versos ligados ao período da prisão e do exílio.",
+        caracteristicas: "Sonetos e odes de tom elegante e solene, com mitologia e convenções árcades; linguagem clara e musical, típica do gosto neoclássico.",
+        influencias: "Formou-se no ambiente literário de Coimbra e de Vila Rica, convivendo com Cláudio Manuel da Costa e Gonzaga, e seguiu os modelos da lírica clássica e italiana."
+    },
+    {
+        slug: "silva-alvarenga",
+        nome: "Silva Alvarenga",
+        escolaSlug: "arcadismo",
+        link: "Arcadismo/Autores/silva-alvarenga.html",
+        periodo: "1749 – 1814",
+        local: "Vila Rica (Ouro Preto), Minas Gerais",
+        bio: "Manuel Inácio da Silva Alvarenga foi poeta, advogado e professor de Retórica e Poética no Rio de Janeiro. Participou da Sociedade Literária do Rio de Janeiro, criada em 1786 para o debate científico e filosófico, e foi preso em 1794 sob suspeita de conspiração, sendo libertado em 1797. Com o nome pastoril de Alcindo Palmireno, escreveu O Desertor e Glaura.",
+        obras: [
+            "O Desertor (poema herói-cômico, 1774)",
+            "Glaura (poemas eróticos, 1799)",
+            "Rondós e madrigais"
+        ],
+        temas: "O amor leve e sensual, a natureza, a crítica ao pedantismo e a defesa de um ensino mais racional e moderno.",
+        caracteristicas: "Poesia lírica leve e musical, com rondós e madrigais, de influência rococó; sensualidade discreta; mistura de convenções árcades e traços iluministas.",
+        influencias: "Influenciado pelo ideário iluminista e pela lírica leve do século XVIII, é visto como um dos poetas árcades de sensibilidade mais moderna."
     }
 ];
 
@@ -293,5 +395,61 @@ const obrasGaleriaSeed = [
         escolaSlug: "classicismo",
         link: "galeria/galeria_classicismo.html",
         descricao: "Apogeu do Antropocentrismo e do dinamismo contido (contrapposto). Celebra a coragem e a força da razão humana, espelhando o herói heroico dos poemas épicos renascentistas."
+    },
+    {
+        nome: "Et in Arcadia Ego",
+        autor: "Nicolas Poussin",
+        ano: "c. 1638",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-et-in-arcadia-ego",
+        descricao: "Retrata pastores diante de um túmulo na Arcádia e traz a ideia de que a morte existe até no lugar ideal. Reflete o tema do Locus Amoenus e a visão clássica da natureza."
+    },
+    {
+        nome: "Peregrinação à Ilha de Citera",
+        autor: "Antoine Watteau",
+        ano: "1717",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-peregrinacao-citera",
+        descricao: "Obra-chave do Rococó, mostra casais em uma festa galante em meio à paisagem. Traduz o gosto pelos amores pastorais e pela idealização da natureza."
+    },
+    {
+        nome: "O Balanço",
+        autor: "Jean-Honoré Fragonard",
+        ano: "c. 1767",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-o-balanco",
+        descricao: "Símbolo da leveza e da sensualidade do Rococó. A cena amorosa em um jardim exuberante dialoga com o clima galante da poesia árcade."
+    },
+    {
+        nome: "O Juramento dos Horácios",
+        autor: "Jacques-Louis David",
+        ano: "1784",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-juramento-dos-horacios",
+        descricao: "Manifesto do Neoclassicismo, com composição rigorosa, linhas claras e tema de virtude cívica da Roma antiga, em sintonia com o racionalismo iluminista."
+    },
+    {
+        nome: "A Morte de Marat",
+        autor: "Jacques-Louis David",
+        ano: "1793",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-morte-de-marat",
+        descricao: "Retrato do líder revolucionário assassinado na banheira, une a sobriedade neoclássica ao clima político da Revolução Francesa."
+    },
+    {
+        nome: "Psiquê Reanimada pelo Beijo de Cupido",
+        autor: "Antonio Canova",
+        ano: "1787 – 1793",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-psique-canova",
+        descricao: "Escultura em mármore que representa um mito greco-romano com equilíbrio e graça, exemplo do Neoclassicismo e da retomada da mitologia clássica."
+    },
+    {
+        nome: "Tiradentes Esquartejado",
+        autor: "Pedro Américo",
+        ano: "1893",
+        escolaSlug: "arcadismo",
+        link: "galeria/galeria_arcadismo.html#obra-tiradentes-esquartejado",
+        descricao: "Pintura brasileira sobre a execução de Tiradentes, líder da Inconfidência Mineira, movimento que envolveu poetas árcades como Cláudio Manuel da Costa e Gonzaga."
     }
 ];
