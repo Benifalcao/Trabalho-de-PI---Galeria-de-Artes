@@ -4,7 +4,7 @@ const escolasSeed = [
     { slug: "barroco", nome: "Barroco", periodo: "1601 – 1768", descricao: "Conflito entre fé e razão.", link: "barroco.html",imagem:"img/Barroco.jpeg" },
     { slug: "arcadismo", nome: "Arcadismo", periodo: "1768 – 1836", descricao: "Retorno à simplicidade.", link: "Arcadismo/arcadismo.html",imagem:"img/Arcadismo.png" },
     { slug: "romantismo", nome: "Romantismo", periodo: "1836 – 1881", descricao: "Subjetividade e idealização.", link: "Romantismo/romantismo.html", imagem:"img/Romantismo.png" },
-    { slug: "realismo", nome: "Realismo", periodo: "1881 – 1893", descricao: "Observação crítica da realidade.", link: "realismo.html",imagem:"img/Realismo.png" },
+    { slug: "realismo",  nome: "Realismo", periodo: "1881 – 1893", descricao: "Observação crítica da realidade.", link: "Realismo/realismo.html",  imagem: "img/Realismo.png"},
     { slug: "parnasianismo", nome: "Parnasianismo", periodo: "1882 – 1922", descricao: "Culto à forma.", link: "parnasianismo.html",imagem:"img/Parnasianismo.png" },
     { slug: "modernismo", nome: "Modernismo", periodo: "1922 – 1960", descricao: "Ruptura estética.", link: "modernismo.html",imagem:"img/Modernismo.png" }
 ];
