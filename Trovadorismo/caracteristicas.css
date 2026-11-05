@@ -221,3 +221,126 @@ footer {
         text-align: center;
     }
 }
+
+.exemplo-cantiga {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f8f4ed;
+    border-left: 4px solid #a8875b;
+    border-radius: 6px;
+}
+
+.exemplo-cantiga h4 {
+    margin-bottom: 8px;
+}
+
+.exemplo-cantiga .autor {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.versos {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.analise {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #d8cbb8;
+}
+
+.analise h4 {
+    margin-bottom: 10px;
+}
+
+
+/* ===== AJUSTES DE LARGURA E TIPOGRAFIA ===== */
+
+/* Aumenta a largura da área principal */
+.caracteristicas .container.grid {
+    width: calc(100% - 80px);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cartões das cantigas */
+.caracteristicas .obra {
+    padding: 30px;
+}
+
+/* Títulos das categorias */
+.caracteristicas .obra > h3 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+/* Explicações das cantigas */
+.caracteristicas .obra > p {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* Caixa dos exemplos */
+.exemplo-cantiga {
+    padding: 30px;
+    margin-top: 32px;
+}
+
+/* Título do exemplo */
+.exemplo-cantiga > h4 {
+    font-size: 22px;
+}
+
+/* Nome do autor */
+.exemplo-cantiga .autor {
+    font-size: 18px;
+}
+
+/* Versos das cantigas */
+.exemplo-cantiga .versos {
+    font-size: 21px;
+    line-height: 1.9;
+}
+
+/* Título da análise */
+.analise h4 {
+    font-size: 21px;
+}
+
+/* Texto da análise */
+.analise p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .caracteristicas .container.grid {
+        width: calc(100% - 32px);
+    }
+
+    .caracteristicas .obra {
+        padding: 20px;
+    }
+
+    .caracteristicas .obra > p {
+        font-size: 17px;
+    }
+
+    .exemplo-cantiga {
+        padding: 20px;
+    }
+
+    .exemplo-cantiga .versos {
+        font-size: 18px;
+    }
+
+    .analise p {
+        font-size: 17px;
+    }
+}

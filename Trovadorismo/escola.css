@@ -283,3 +283,99 @@ footer{
 .filmes .thumb img{
     object-position: top;
 }
+
+
+/*Prosa e poesia*/
+
+/* ===== SEÇÃO DE TIPOS DE OBRAS ===== */
+
+.tipos-obras {
+    padding: 40px 0;
+    background-color: #f1ede6;
+}
+
+.tipos-obras .container {
+    width: calc(100% - 120px);
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.tipos-obras h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #922f2d;
+    margin-bottom: 20px;
+}
+
+/* Dois cartões */
+.tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Cartões */
+.tipo-card {
+    background-color: #ffffff;
+    border: 1px solid #e5dccd;
+    border-radius: 10px;
+    padding: 23px 25px;
+    box-shadow: 0 3px 8px rgba(80, 55, 30, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tipo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(80, 55, 30, 0.08);
+}
+
+.tipo-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #922f2d;
+    margin-bottom: 10px;
+}
+
+.tipo-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #454545;
+    margin: 0;
+}
+
+
+
+
+
+.tipo-card strong {
+    color: #922f2d;
+    font-weight: 600;
+}
+
+.tipo-card em {
+    color: #454545;
+}
+
+/* Telas menores */
+@media (max-width: 768px) {
+    .tipos-obras .container {
+        width: calc(100% - 36px);
+    }
+
+    .tipos-obras h3 {
+        font-size: 29px;
+    }
+
+    .tipos-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tipo-card {
+        padding: 20px;
+    }
+}
