@@ -1,0 +1,149 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Container de Largura */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Banner Principal */
+.hero {
+    background-color: #7b2826; /* Tom avermelhado/vinho do layout original */
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.hero .subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero .date-info {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Seções Informativas */
+.info-section {
+    margin: 40px 0;
+}
+
+.info-section h2 {
+    color: #7b2826;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #444444;
+    max-width: 850px;
+}
+
+/* Bloco de Características e Relacionados (Fundo Bege) */
+.features-section {
+    background-color: #f6f3eb; /* Fundo creme/bege */
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+.features-section h2 {
+    color: #7b2826;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.tag {
+    border: 1px solid #d4c0a8;
+    background-color: #ffffff;
+    color: #7b2826;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #7b2826;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5d1e1c;
+}
+
+/* Obras Representativas (Grid de Cards) */
+.works-section h2 {
+    color: #7b2826;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #ffffff;
+}
+
+.card-img-placeholder {
+    width: 100%;
+    height: 220px;
+    background-color: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.card-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    color: #222222;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #777777;
+}
