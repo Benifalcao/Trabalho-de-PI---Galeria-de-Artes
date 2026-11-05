@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museu Virtual da Literatura - Galeria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <h1>Museu Virtual da Literatura</h1>
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="../index.html#escolas">Escolas Literárias</a>
+        <a href="../autores.html">Autores</a>
+        <a href="indexgaleria.html" class="active">Galeria</a>
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#busca">🔍</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Principal com Navegação -->
+  <section class="hero-banner">
+    <div class="container">
+      <div class="banner-title-wrapper">
+        <a href="galeria_classicismo.html" class="nav-arrow prev" title="Escola Anterior">&#10094;</a>
+        <h1>TROVADORISMO</h1>
+        <a href="galeria_humanismo.html" class="nav-arrow next" title="Próxima Escola">&#10095;</a>
+      </div>
+      <h2>GALERIA DE ARTE</h2>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal (Grid de Cards + Painel Lateral) -->
+  <main class="main-container">
+
+    <!-- Grid de Cards de Obras -->
+    <section class="gallery-grid">
+
+      <!-- Card 1 -->
+      <article class="card" id="obra-cantigas-de-santa-maria">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/cantigas-de-santa-maria.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Cantigas de Santa Maria</h3>
+            <p class="autor">Atribuídas a Afonso X e colaboradores</p>
+            <p class="obra-desc">
+              Coleção medieval composta por mais de 400 cantigas em galego-português, dedicadas à Virgem Maria. Reúne narrativas de milagres e louvores religiosos, acompanhadas por iluminuras que representam cenas da sociedade medieval.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Século XIII</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" id="obra-pergaminho-vindel">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/pergaminho-vindel.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Pergaminho Vindel</h3>
+            <p class="autor">Martim Codax</p>
+            <p class="obra-desc">
+              Manuscrito medieval que preserva sete cantigas de amigo atribuídas a Martim Codax. Seis delas apresentam notação musical, permitindo conhecer aspectos da relação entre poesia, música e oralidade no Trovadorismo.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Século XIII</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" id="obra-cancioneiro-da-ajuda">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/cancioneiro-da-ajuda.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Cancioneiro da Ajuda</h3>
+            <p class="autor">Autores diversos</p>
+            <p class="obra-desc">
+              Um dos mais importantes manuscritos da lírica galego-portuguesa. Preserva principalmente cantigas de amor, acompanhadas por iluminuras que representam trovadores, instrumentos musicais e elementos da cultura cortesã.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Final do século XIII</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" id="obra-cancioneiro-nacional">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/cancioneiro-da-biblioteca-nacional.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Cancioneiro da Biblioteca Nacional</h3>
+            <p class="autor">Autores diversos</p>
+            <p class="obra-desc">
+              Também conhecido como Cancioneiro Colocci-Brancuti, reúne um amplo conjunto de cantigas de trovadores e jograis. É uma das principais fontes para o estudo da poesia medieval em galego-português.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Cópia do século XVI</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card" id="obra-ondas-do-mar-de-vigo">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/ondas-do-mar-de-vigo.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Ondas do Mar de Vigo</h3>
+            <p class="autor">Martim Codax</p>
+            <p class="obra-desc">
+              Cantiga de amigo em que a voz feminina expressa a saudade e a expectativa pelo retorno do amado. O mar e as ondas assumem papel simbólico, funcionando como elementos da natureza associados à ausência e à espera.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Século XIII</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card" id="obra-ai-flores">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/ai-flores-ai-flores-do-verde-pino.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Ai Flores, Ai Flores do Verde Pino</h3>
+            <p class="autor">D. Dinis</p>
+            <p class="obra-desc">
+              Cantiga de amigo na qual uma jovem conversa com elementos da natureza para obter notícias sobre o amado. O paralelismo e a repetição dos versos reforçam o ritmo musical e a expressão da saudade.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Século XIII</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="card" id="obra-ai-dona-fea">
+        <div class="card-img" style="background-image: url('../Trovadorismo/img/ai-dona-fea.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Ai, Dona Fea, Fostes-vos Queixar</h3>
+            <p class="autor">João Garcia de Guilhade</p>
+            <p class="obra-desc">
+              Cantiga de escárnio que utiliza ironia e linguagem satírica para ridicularizar uma personagem feminina. Representa o caráter crítico e humorístico das composições trovadorescas voltadas à exposição de comportamentos e conflitos sociais.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">TROVADORISMO</span>
+            <span class="year">Século XIII</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Painel Lateral Informativo -->
+    <aside class="info-panel">
+      <span class="panel-subtitle">SALA MEDIEVAL</span>
+      <h2 class="panel-title">Poesia, Música e Cultura Cortesã</h2>
+      <p class="panel-desc">
+        Explore o universo do Trovadorismo, primeira manifestação literária
+        da língua portuguesa. Conheça as cantigas medievais, suas formas
+        poéticas e a relação entre literatura, música e sociedade.
+      </p>
+      <p class="panel-highlight">
+        Das declarações de amor e manifestações de saudade às sátiras
+        sociais e aos louvores religiosos, descubra como trovadores e
+        jograis transformaram poesia e música em expressões da cultura medieval.
+      </p>
+      <div class="panel-stats">
+        <div>
+          <strong>7 Obras</strong>
+          <span>Em exposição</span>
+        </div>
+        <div>
+          <strong>4 Gêneros</strong>
+          <span>Poéticos e musicais</span>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Botão de Voltar -->
+  <section class="secao-botao">
+    <div class="container">
+      <a href="javascript:history.back()" class="btn">Voltar</a>
+    </div>
+  </section>
+
+  <!-- Rola até a obra referenciada na URL (ex: galeria_trovadorismo.html#obra-pergaminho-vindel) e a realça -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!location.hash) return;
+      const alvo = document.querySelector(location.hash);
+      if (!alvo) return;
+
+      alvo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      alvo.classList.add('card-destacado');
+      setTimeout(() => alvo.classList.remove('card-destacado'), 2500);
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <span>Museu Virtual da Literatura</span>
+      <span>© 2026 Museu Virtual da Literatura</span>
+    </div>
+  </footer>
+
+</body>
+</html>
