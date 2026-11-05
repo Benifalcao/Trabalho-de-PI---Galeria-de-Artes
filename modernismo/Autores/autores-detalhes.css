@@ -1,0 +1,252 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f3ee;
+    color: #352b28;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1030px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eadfd4;
+}
+
+.nav {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #8a302e;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #352b28;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #b78324;
+}
+
+/* Conteúdo */
+
+.conteudo {
+    padding: 40px 0;
+}
+
+.cartao {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 13px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px #00000008;
+}
+
+.identificacao {
+    color: #b78324;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #8a302e;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Apresentação do autor */
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 35px;
+}
+
+.imagem-autor {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    border-radius: 50%;
+    background-color: #c6922b;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.informacoes {
+    flex: 1;
+}
+
+.dados {
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+/* Obras */
+
+.obras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.obra {
+    border: 1px solid #c6922b;
+    color: #66502c;
+    background-color: #fffaf1;
+    padding: 5px 14px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+/* Citação ou destaque */
+
+.destaque {
+    background-color: #812d2b;
+    color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.destaque .identificacao {
+    color: #e8c77c;
+}
+
+.destaque p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Botões */
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+    color: #8a302e;
+    border: 1px solid #8a302e;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #8a302e;
+    color: #fff;
+}
+
+.voltar {
+    padding: 10px 0 40px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #211a17;
+    color: #fff;
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-autor {
+        margin: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}

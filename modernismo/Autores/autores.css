@@ -1,0 +1,268 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #352b28;
+    background-color: #f7f3ee;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eadfd4;
+}
+
+.nav {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #8a302e;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #352b28;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #a56d19;
+}
+
+
+/* Título */
+
+.titulo-pagina {
+    padding: 40px 0 25px;
+}
+
+.identificacao {
+    color: #b78324;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.titulo-pagina h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: #8a302e;
+}
+
+
+/* Cartões dos autores */
+
+.secao-autores {
+    padding: 5px 0 45px;
+}
+
+.grid-autores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-autor {
+    background-color: #ffffff;
+    border: 1px solid #eadfd4;
+    border-radius: 13px;
+    padding: 25px 15px;
+    min-height: 290px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card-autor:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #00000010;
+}
+
+
+/* Círculos dos autores */
+
+.imagem-autor {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+
+    background-color: #c6922b;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* Informações */
+
+.card-autor h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    color: #352b28;
+    line-height: 1.3;
+    margin-bottom: 7px;
+}
+
+.escola {
+    color: #b78324;
+    font-size: 13px;
+}
+
+.periodo {
+    color: #777777;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+/* Botão */
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+
+    color: #8a302e;
+    border: 1px solid #8a302e;
+
+    padding: 7px 17px;
+    border-radius: 6px;
+
+    font-size: 13px;
+    margin-top: auto;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #8a302e;
+    color: #ffffff;
+}
+
+
+/* Voltar */
+
+.voltar {
+    padding: 20px 0 45px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    background-color: #8a302e;
+    color: #ffffff;
+
+    padding: 9px 20px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.botao-voltar:hover {
+    background-color: #642020;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #211a17;
+    color: #ffffff;
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+.footer-content p {
+    font-size: 12px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+
+    .grid-autores {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .grid-autores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .grid-autores {
+        grid-template-columns: 1fr;
+    }
+
+}

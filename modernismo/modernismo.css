@@ -1,0 +1,228 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #352b28;
+    background-color: #ffffff;
+    line-height: 1.8;
+}
+
+.container {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    background-color: #812d2d;
+    color: #ffffff;
+    padding: 55px 0;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #f0d5bd;
+}
+
+.cabecalho h1 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    margin: 8px 0;
+    line-height: 1.3;
+}
+
+.periodo {
+    font-size: 14px;
+}
+
+
+/* Seções */
+
+.secao {
+    padding: 45px 0;
+}
+
+.secao h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #8a302e;
+    margin-bottom: 10px;
+}
+
+.secao p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.secao-bege {
+    background-color: #f3eee6;
+}
+
+
+/* Características */
+
+.caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0 25px;
+}
+
+.caracteristicas span {
+    border: 1px solid #c99b48;
+    color: #a16c16;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+
+/* Botões */
+
+.botao {
+    display: inline-block;
+    background-color: #812d2d;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #5f2020;
+}
+
+
+/* Obras */
+
+.obras {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    margin-top: 20px;
+}
+
+.obra img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: #bd8b27;
+}
+
+.obra h3 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.obra p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+
+/* Autores */
+
+.autores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.autores div {
+    background-color: #f3eee6;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.autores h3 {
+    color: #8a302e;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.autores p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+/* Curiosidade */
+
+.curiosidade {
+    background-color: #ffffff;
+    border: 1px solid #e5ddd3;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.curiosidade p {
+    margin: 0;
+}
+
+
+/* Rodapé */
+
+.rodape {
+    background-color: #1d1714;
+    color: #ffffff;
+    padding: 18px 0;
+}
+
+.rodape .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rodape p {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .cabecalho h1 {
+        font-size: 38px;
+    }
+
+    .obras {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .autores {
+        grid-template-columns: 1fr;
+    }
+
+    .rodape .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .obras {
+        grid-template-columns: 1fr;
+    }
+
+}
