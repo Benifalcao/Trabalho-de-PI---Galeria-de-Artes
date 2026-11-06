@@ -283,3 +283,20 @@ footer{
 .filmes .thumb img{
     object-position: top;
 }
+
+
+
+
+
+
+/* Centralização das imagens das obras */
+.obra img,
+.filme img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 auto;
+}
+
