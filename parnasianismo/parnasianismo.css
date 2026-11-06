@@ -1,149 +1,393 @@
 /* Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Georgia', serif, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background-color: #ffffff;
-    color: #333333;
-    line-height: 1.6;
+body{
+    font-family:'Inter',sans-serif;
+    background:#f7f4ef;
+    color:#4d4139;
 }
 
-/* Container de Largura */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* Banner Principal */
-.hero {
-    background-color: #7b2826; /* Tom avermelhado/vinho do layout original */
-    color: #ffffff;
-    padding: 60px 0;
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
 }
 
-.hero .subtitle {
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.8;
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin: 10px 0;
+.nav h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.5rem;
+    color:#8a3030;
 }
 
-.hero .date-info {
-    font-size: 1rem;
-    opacity: 0.9;
+nav{
+    display:flex;
+    gap:25px;
 }
 
-/* Seções Informativas */
-.info-section {
-    margin: 40px 0;
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
 }
 
-.info-section h2 {
-    color: #7b2826;
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+.banner{
+    background:#7d2d2d;
+    color:white;
+    padding:70px 0;
 }
 
-.info-section p {
-    font-size: 1rem;
-    color: #444444;
-    max-width: 850px;
+.categoria{
+    letter-spacing:2px;
+    font-size:12px;
+    color:#f2d8b7;
 }
 
-/* Bloco de Características e Relacionados (Fundo Bege) */
-.features-section {
-    background-color: #f6f3eb; /* Fundo creme/bege */
-    padding: 50px 0;
-    margin: 40px 0;
+.banner h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    margin:10px 0;
 }
 
-.features-section h2 {
-    color: #7b2826;
-    font-size: 1.8rem;
-    margin-bottom: 25px;
+.banner p{
+    opacity:.9;
 }
 
-.tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 30px;
+.conteudo{
+    padding:60px 0;
+    background:white;
 }
 
-.tag {
-    border: 1px solid #d4c0a8;
-    background-color: #ffffff;
-    color: #7b2826;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+.bloco{
+    margin-bottom:40px;
 }
 
-.btn-primary {
-    display: inline-block;
-    background-color: #7b2826;
-    color: #ffffff;
-    padding: 10px 24px;
-    border-radius: 6px;
+.bloco h3{
+    font-family:'Cormorant Garamond',serif;
+    color:#8a3030;
+    margin-bottom:10px;
+    font-size:1.8rem;
+}
+
+.bloco p{
+    line-height:1.8;
+    max-width:900px;
+}
+
+.caracteristicas{
+    padding:60px 0;
+    background:#f2eee7;
+}
+
+.caracteristicas h3,
+.obras h3,
+.movimentos h3,
+.curiosidade h3,
+.galeria-grid h3,
+.sobre-conteudo h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#8a3030;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.tags span{
+    border:1px solid #c9a04a;
+    color:#9a7020;
+    padding:8px 15px;
+    border-radius:50px;
+    font-size:14px;
+    background:white;
+}
+
+.tags span a {
+    color: #9a7020;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: background 0.3s;
+    transition: color 0.2s;
 }
 
-.btn-primary:hover {
-    background-color: #5d1e1c;
+.tags span a:hover {
+    color: #7d2d2d;
 }
 
-/* Obras Representativas (Grid de Cards) */
-.works-section h2 {
-    color: #7b2826;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    margin-bottom: 50px;
-}
-
-.card {
-    background: #ffffff;
-}
-
-.card-img-placeholder {
-    width: 100%;
-    height: 220px;
-    background-color: #eee;
+/* Estilo padrão para Botões ou Links com classe .btn */
+button,
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    background: #7d2d2d;
+    color: white;
     border-radius: 6px;
-    overflow: hidden;
-    margin-bottom: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
 }
 
-.card-img-placeholder img {
+button:hover,
+.btn:hover {
+    background: #642323;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.obras{
+    padding:60px 0;
+    background:white;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.grid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.obra{
+    background:white;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.obra:hover{
+    transform: translateY(-4px);
+}
+
+/* Área e encaixe da imagem da obra */
+.thumb{
+    height:220px;
+    background:#bc8b28;
+    border-radius:8px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+
+.thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-.card h3 {
-    font-size: 1.05rem;
-    color: #222222;
+.obra h4{
+    margin-bottom:5px;
 }
 
-.card p {
-    font-size: 0.85rem;
-    color: #777777;
+.obra p{
+    font-size:14px;
+    color:#666;
+}
+
+.movimentos{
+    padding:40px 0;
+    background:#f7f4ef;
+}
+
+.galeria-btn{
+    padding:20px 0;
+}
+
+.curiosidade{
+    background:#efece7;
+    padding:40px 0 80px;
+}
+
+.curiosidade p{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid #e5ddd5;
+    line-height:1.8;
+}
+
+.botão{
+    padding:60px 0;
+    background:#f2eee7;
+}
+
+footer{
+    background:#1c1713;
+    color:white;
+    padding:25px 0;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* ===== Página Galeria ===== */
+
+.galeria-grid{
+    padding:60px 0;
+    background:white;
+}
+
+.galeria-fotos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+.galeria-item{
+    height:200px;
+    background:#bc8b28;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+}
+
+.galeria-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.galeria-item .legenda{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(28,23,19,.65);
+    color:white;
+    font-size:13px;
+    padding:8px 12px;
+}
+
+/* ===== Página Sobre ===== */
+
+.sobre-conteudo{
+    padding:60px 0;
+    background:#f2eee7;
+}
+
+.sobre-conteudo .bloco{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid #e5ddd5;
+}
+
+.filmes .thumb img{
+    object-position: top;
+}
+
+/* ===== SEÇÃO DE TIPOS DE OBRAS ===== */
+
+.tipos-obras {
+    padding: 40px 0;
+    background-color: #f1ede6;
+}
+
+.tipos-obras .container {
+    width: calc(100% - 120px);
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.tipos-obras h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #922f2d;
+    margin-bottom: 20px;
+}
+
+/* Dois cartões */
+.tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Cartões */
+.tipo-card {
+    background-color: #ffffff;
+    border: 1px solid #e5dccd;
+    border-radius: 10px;
+    padding: 23px 25px;
+    box-shadow: 0 3px 8px rgba(80, 55, 30, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tipo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(80, 55, 30, 0.08);
+}
+
+.tipo-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #922f2d;
+    margin-bottom: 10px;
+}
+
+.tipo-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #454545;
+    margin: 0;
+}
+
+.tipo-card strong {
+    color: #922f2d;
+    font-weight: 600;
+}
+
+.tipo-card em {
+    color: #454545;
+}
+
+/* Telas menores */
+@media (max-width: 768px) {
+    .tipos-obras .container {
+        width: calc(100% - 36px);
+    }
+
+    .tipos-obras h3 {
+        font-size: 29px;
+    }
+
+    .tipos-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tipo-card {
+        padding: 20px;
+    }
 }
