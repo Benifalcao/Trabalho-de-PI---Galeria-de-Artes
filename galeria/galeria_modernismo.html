@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Museu Virtual da Literatura - Galeria Modernista</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <h1>Museu Virtual da Literatura</h1>
+      <nav>
+        <a href="../index.html">Início</a>
+        <a href="../index.html#escolas">Escolas Literárias</a>
+        <a href="../autores.html">Autores</a>
+        <a href="indexgaleria.html" class="active">Galeria</a>
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#busca">🔍</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Principal com Navegação -->
+  <section class="hero-banner">
+    <div class="container">
+      <div class="banner-title-wrapper">
+        <a href="galeria_simbolismo.html" class="nav-arrow prev" title="Escola Anterior">&#10094;</a>
+        <h1>MODERNISMO</h1>
+        <a href="galeria_contemporanea.html" class="nav-arrow next" title="Próxima Escola">&#10095;</a>
+      </div>
+      <h2>GALERIA DE ARTE</h2>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal (Grid de Cards + Painel Lateral) -->
+  <main class="main-container">
+    
+    <!-- Grid de Cards de Obras -->
+    <section class="gallery-grid">
+      
+      <!-- Card 1 -->
+      <article class="card" id="obra-abaporu">
+        <div class="card-img" style="background-image: url('../Modernismo/img/abaporu.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Abaporu</h3>
+            <p class="autor">Tarsila do Amaral</p>
+            <p class="obra-desc">
+              Símbolo máximo da <strong>Antropofagia</strong>. A obra inspirou Oswald de Andrade a criar o Movimento Antropofágico, propondo a deglutição da cultura europeia para a criação de uma arte genuinamente brasileira.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">MODERNISMO</span>
+            <span class="year">1928</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" id="obra-o-bobo">
+        <div class="card-img" style="background-image: url('../Modernismo/img/o-bobo.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>O Bobo</h3>
+            <p class="autor">Anita Malfatti</p>
+            <p class="obra-desc">
+              Marco do <strong>Expressionismo</strong> no Brasil. A exposição de Anita em 1917 serviu como o estopim para a união dos jovens artistas que organizaram a Semana de Arte Moderna de 1922.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">MODERNISMO</span>
+            <span class="year">1915–1916</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" id="obra-operarios">
+        <div class="card-img" style="background-image: url('../Modernismo/img/operarios.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Operários</h3>
+            <p class="autor">Tarsila do Amaral</p>
+            <p class="obra-desc">
+              Exemplo da <strong>Segunda Fase Modernista</strong> (Fase Social). Retrata a diversidade étnica e a industrialização acelerada do Brasil, dialogando com as preocupações sociais e políticas da época.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">MODERNISMO</span>
+            <span class="year">1933</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" id="obra-os-mestiços">
+        <div class="card-img" style="background-image: url('../Modernismo/img/mestico.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Mestiço</h3>
+            <p class="autor">Cândido Portinari</p>
+            <p class="obra-desc">
+              Reflete a <strong>Valorização da Identidade Nacional</strong> e da classe trabalhadora. A força física do trabalhador rural e as pinceladas marcantes traduzem o nacionalismo crítico do período.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">MODERNISMO</span>
+            <span class="year">1934</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card" id="obra-samba">
+        <div class="card-img" style="background-image: url('../Modernismo/img/samba.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Samba</h3>
+            <p class="autor">Di Cavalcanti</p>
+            <p class="obra-desc">
+              Celebra a <strong>Cultura Popular Brasileira</strong> e a sensualidade tropical. Di Cavalcanti foi um dos idealizadores da Semana de 22, levando o cotidiano e o folclore urbano para as telas.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">MODERNISMO</span>
+            <span class="year">1925</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card" id="obra-guernica">
+        <div class="card-img" style="background-image: url('../Modernismo/img/guernica.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>Guernica</h3>
+            <p class="autor">Pablo Picasso</p>
+            <p class="obra-desc">
+              Obra-prima do <strong>Cubismo</strong> internacional. Retrata a dor da guerra por meio da decomposição das formas e da fragmentação espacial, vanguarda que revolucionou a estrutura poética modernista.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">VANGUARDA</span>
+            <span class="year">1937</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="card" id="obra-persistencia-da-memoria">
+        <div class="card-img" style="background-image: url('../Modernismo/img/persistencia-da-memoria.png');"></div>
+        <div class="card-info">
+          <div>
+            <h3>A Persistência da Memória</h3>
+            <p class="autor">Salvador Dalí</p>
+            <p class="obra-desc">
+              Ícone do <strong>Surrealismo</strong>. Explora o inconsciente e a plasticidade do tempo, vanguarda europeia que influenciou a metáfora onírica de poetas modernistas como Murilo Mendes e Jorge de Lima.
+            </p>
+          </div>
+          <div class="card-tag">
+            <span class="badge">VANGUARDA</span>
+            <span class="year">1931</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Painel Lateral Informativo -->
+    <aside class="info-panel">
+      <span class="panel-subtitle">SALA MODERNISTA</span>
+      <h2 class="panel-title">Ruptura, Vanguardas e Brasilidade</h2>
+      <p class="panel-desc">
+        Explore a revolução estética iniciada na Semana de Arte Moderna de 1922. A destruição das formas acadêmicas deu lugar ao coloquialismo, à liberdade de criação e à busca por uma identidade genuinamente brasileira.
+      </p>
+      <p class="panel-highlight">
+        Das vanguardas europeias (Cubismo, Expressionismo, Surrealismo) à Antropofagia de Tarsila e Oswald, contemple a arte que redefiniu a cultura do país.
+      </p>
+      <div class="panel-stats">
+        <div>
+          <strong>6 Salas</strong>
+          <span>Exposição ativa</span>
+        </div>
+        <div>
+          <strong>24 Obras</strong>
+          <span>Catalogadas</span>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Botão de Voltar -->
+  <section class="secao-botao">
+    <div class="container">
+      <a href="javascript:history.back()" class="btn">Voltar</a>
+    </div>
+  </section>
+
+  <!-- Rola até a obra referenciada na URL (ex: galeria_modernismo.html#obra-abaporu) e a realça -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!location.hash) return;
+      const alvo = document.querySelector(location.hash);
+      if (!alvo) return;
+
+      alvo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      alvo.classList.add('card-destacado');
+      setTimeout(() => alvo.classList.remove('card-destacado'), 2500);
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <span>Museu Virtual da Literatura</span>
+      <span>© 2026 Museu Virtual da Literatura</span>
+    </div>
+  </footer>
+
+</body>
+</html>
