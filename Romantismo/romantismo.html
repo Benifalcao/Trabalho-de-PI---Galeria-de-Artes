@@ -7,10 +7,16 @@
 
 <link rel="stylesheet" href="escola.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+<div class="progresso" aria-hidden="true">
+    <div class="progresso-barra" id="barra"></div>
+</div>
 
 <header>
     <div class="container nav">
@@ -25,8 +31,8 @@
             <a href="../index.html#busca">🔍</a>
         </nav>
     </div>
+    
 </header>
-
 <section class="banner">
     <div class="container">
 
@@ -37,8 +43,10 @@
         <h2>Romantismo</h2>
 
         <p>1836 - 1881 • Brasil e Europa</p>
-
+            
     </div>
+
+    
 </section>
 
 <section class="conteudo">
@@ -186,7 +194,7 @@ Ainda que a burguesia tenha conquistado o poder político e institucional, seu p
         </div>
 
         <button>
-           <a href= "Autores/autores.html"> Ver Autores Associados</a>
+           <a class="btn" href="Autores/autores.html">Ver Autores Associados</a>
         </button>
 
     </div>
@@ -256,7 +264,7 @@ Ainda que a burguesia tenha conquistado o poder político e institucional, seu p
     <div class="container">
 
         <button>
-            <a href="galeria_romantismo.html">Galeria de Imagens</a>
+            <a class="btn" href="/galeria/romantismo/galeria_romantismo.html">Ver Galeria</a>
         </button>
 
     </div>
@@ -290,10 +298,13 @@ Ainda que a burguesia tenha conquistado o poder político e institucional, seu p
         
 </section>
 
-<section class="botão">
-        <div class="container">
-            <button><a href="../index.html">Voltar</a></button>
-        </div>
+        <section class="voltar">
+    <div class="container">
+        <a class="btn" href="/index.html">Voltar</a>
+    </div>
+
+</section>
+
 </section>
 
    
@@ -307,6 +318,19 @@ Ainda que a burguesia tenha conquistado o poder político e institucional, seu p
 
     </div>
 </footer>
+<script>
+ const barra = document.getElementById('barra');
 
+function atualizarBarra() {
+    const rolagem = window.scrollY;
+    const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+    const porcentagem = Math.round((rolagem / alturaTotal) * 100);
+
+    barra.style.width = porcentagem + '%';
+}
+
+window.addEventListener('scroll', atualizarBarra);
+atualizarBarra();
+</script>
 </body>
 </html>

@@ -5,8 +5,8 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Inter',sans-serif;
-background:#f7f4ef;
+font-family:'Roboto Condensed',sans-serif;
+background:#fffffe;
 color:#4d4139;
 }
 
@@ -14,10 +14,28 @@ color:#4d4139;
 width:90%;
 max-width:1200px;
 margin:auto;
+font-family:'Roboto Condensed',sans-serif;
+}
+
+.progresso{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:10px;
+    background:#e5ddd5;
+    z-index:1000;
+}
+
+.progresso-barra{
+    height:100%;
+    width:0;
+    background:#7d2d2d;
+    transition:width .1s linear;
 }
 
 header{
-background:white;
+background:rgb(255, 255, 255);
 border-bottom:1px solid #ddd;
 }
 
@@ -29,7 +47,7 @@ padding:20px 0;
 }
 
 .nav h1{
-font-family:'Cormorant Garamond',serif;
+font-family:'Roboto Condensed',sans-serif;
 font-size:1.5rem;
 color:#8a3030;
 }
@@ -47,7 +65,7 @@ font-size:14px;
 
 .banner{
 background:#7d2d2d;
-color:white;
+color:rgb(249, 245, 234);
 padding:70px 0;
 }
 
@@ -58,7 +76,7 @@ color:#f2d8b7;
 }
 
 .banner h2{
-font-family:'Cormorant Garamond',serif;
+font-family:'Roboto Condensed',sans-serif;
 font-size:4rem;
 margin:10px 0;
 }
@@ -77,7 +95,7 @@ margin-bottom:40px;
 }
 
 .bloco h3{
-font-family:'Cormorant Garamond',serif;
+font-family:'Roboto Condensed',sans-serif;
 color:#8a3030;
 margin-bottom:10px;
 font-size:1.8rem;
@@ -86,6 +104,7 @@ font-size:1.8rem;
 .bloco p{
 line-height:1.8;
 max-width:900px;
+font-size:21px;
 }
 
 .caracteristicas{
@@ -97,7 +116,7 @@ background:#f2eee7;
 .obras h3,
 .movimentos h3,
 .curiosidade h3{
-font-family:'Cormorant Garamond',serif;
+font-family:'Roboto Condensed',sans-serif;
 font-size:2rem;
 margin-bottom:20px;
 color:#8a3030;
@@ -119,13 +138,20 @@ font-size:14px;
 background:white;
 }
 
+
 button{
-padding:12px 20px;
+padding:7px 9px;
 border:none;
 background:#7d2d2d;
 color:white;
-border-radius:6px;
+border-radius:10px;
 cursor:pointer;
+text-align: center;
+}
+.voltar{
+    padding:70px 70px;
+    background:#f2eee7;
+    text-align:center;
 }
 
 .obras{
@@ -144,7 +170,7 @@ background:white;
 }
 
 .tipos-obras h3 {
-    font-family: 'Cormorant Garamond', serif;
+   font-family:'Roboto Condensed',sans-serif;
     font-size: 34px;
     font-weight: 700;
     color: #922f2d;
@@ -167,6 +193,7 @@ background:white;
     padding: 23px 25px;
     box-shadow: 0 3px 8px rgba(80, 55, 30, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size:18px;
 }
 
 .tipo-card:hover {
@@ -175,7 +202,7 @@ background:white;
 }
 
 .tipo-card h4 {
-    font-family: 'Inter', sans-serif;
+    font-family:'Roboto Condensed',sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #922f2d;
@@ -183,7 +210,7 @@ background:white;
 }
 
 .tipo-card p {
-    font-family: 'Inter', sans-serif;
+   font-family:'Roboto Condensed',sans-serif;
     font-size: 15px;
     line-height: 1.7;
     color: #454545;
@@ -282,18 +309,19 @@ border:1px solid #e5ddd5;
 line-height:1.8;
 }
 
-.botão{
-padding:60px 0;
-background:#f2eee7;
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#7d2d2d;
+    color:white;
+    text-decoration:none;
+    font-size:1.05rem;
+    border-radius:6px;
+    transition:background .2s ease;
 }
 
-.botão button{
-padding:12px 20px;
-border:none;
-background:#7d2d2d;
-color:white;
-border-radius:6px;
-cursor:pointer;
+.btn:hover{
+    background:#5f2121;
 }
 
 footer{
